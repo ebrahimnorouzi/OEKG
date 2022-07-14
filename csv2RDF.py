@@ -28,8 +28,8 @@ class xlsx2RDF(object):
         self.pmd_kg = Namespace("http://www.materialdigital.de/ontology/")
         self.g.bind("pmd_kg", self.pmd_kg)
         
-        # load excel file to dataframe
-        self.data = pd.read_excel('MSE_ontologies.xlsx').fillna('')
+        # load .csv file to dataframe
+        self.data = pd.read_csv('MSE_ontologies.csv', sep=',', encoding_errors='ignore').fillna('')
     
         
     def create_triples(self):
