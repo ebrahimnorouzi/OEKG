@@ -18,18 +18,16 @@ WHERE {
 }
 """
 query2 = """
-SELECT DISTINCT ?q1
+SELECT ?q1 (COUNT(?q1) AS ?count)
 WHERE {
-    pmd_kg:pmd_projects omv:contributesToOntology ?s1 , ?s2 .
-    ?s1 a omv:Ontology .
-    ?s2 a omv:Ontology .
-    ?s1 omv:useImports ?q1 .
-    ?s2 omv:useImports ?q2 .
-    FILTER((?q1=?q2) && !(?s1=?s2))# && ?q1 NOT IN (pmd_kg:dc, pmd_kg:skos, pmd_kg:dcat, pmd_kg:dcam, pmd_kg:foaf, pmd_kg:csvw, pmd_kg:xml, pmd_kg:xsd, pmd_kg:brick, pmd_kg:sosa, pmd_kg:schema, pmd_kg:rdf, pmd_kg:rdfs, pmd_kg:dcterms, pmd_kg:dcmitype))
-}
+    pmd_kg:pmd_projects omv:contributesToOntology ?s .
+    ?s a omv:Ontology .
+    ?s omv:useImports ?q1 .
+} GROUP BY ?q1
+ORDER BY DESC(?count)
 """
 qres = g.query(query2)
 
 for row in qres:
-    #print(f"{row.s1} and {row.s2} similar {row.q1}")
-    print(f"{row.q1}")
+    print(row)
+    #print(row['q1'], "frequency", row['count'])
