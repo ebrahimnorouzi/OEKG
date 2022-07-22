@@ -5,7 +5,7 @@
 pmd_kg:pmd_projects a omv:Organisation ;
     omv:contributesToOntology pmd_kg:bfo,
         pmd_kg:bionto,
-        pmd_kg:bwm,
+        pmd_kg:bwmd,
         pmd_kg:cco,
         pmd_kg:dc,
         pmd_kg:deb,
@@ -53,10 +53,10 @@ pmd_kg:bionto a omv:Ontology ;
     omv:name "Bionto"^^xsd:string ;
     omv:resourceLocator "https://emmc.info/taxonda/bionto/ "^^xsd:string .
 
-pmd_kg:bwm a omv:Ontology ;
+pmd_kg:bwmd a omv:Ontology ;
     omv:description "Material Digital Ontology"^^xsd:string ;
     omv:modificationDate "22_Nov 2021"^^xsd:string ;
-    omv:name "Baden Wrttemberg Material Digital Ontology"^^xsd:string ;
+    omv:name "Baden W�rttemberg Material Digital Ontology"^^xsd:string ;
     omv:numClasses 787.0 ;
     omv:numProperties 39.0 ;
     omv:resourceLocator "https://gitlab.cc-asp.fraunhofer.de/EMI_datamanagement/bwmd_ontology "^^xsd:string ;

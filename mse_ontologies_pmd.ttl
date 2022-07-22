@@ -1,0 +1,592 @@
+@prefix omv: <http://omv.ontoware.org/2005/05/ontology#> .
+@prefix pmd_kg: <http://www.materialdigital.de/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+pmd_kg:pmd_projects a omv:Organisation ;
+    omv:contributesToOntology pmd_kg:bfo,
+        pmd_kg:bwmd,
+        pmd_kg:cco,
+        pmd_kg:dc,
+        pmd_kg:emmo,
+        pmd_kg:emmo_mechanical_testing,
+        pmd_kg:emmo_microstructure,
+        pmd_kg:foaf,
+        pmd_kg:mseo,
+        pmd_kg:pmdco,
+        pmd_kg:provo,
+        pmd_kg:so,
+        pmd_kg:sp,
+        pmd_kg:ssn .
+
+pmd_kg:MGEDOntology a omv:Ontology .
+
+pmd_kg:SO a omv:Ontology .
+
+pmd_kg:Thesaurus a omv:Ontology .
+
+pmd_kg:annotations a omv:Ontology .
+
+pmd_kg:bwmd a omv:Ontology ;
+    omv:description "Material Digital Ontology"^^xsd:string ;
+    omv:modificationDate "22_Nov 2021"^^xsd:string ;
+    omv:name "Baden W�rttemberg Material Digital Ontology"^^xsd:string ;
+    omv:numClasses 787.0 ;
+    omv:numProperties 39.0 ;
+    omv:resourceLocator "https://gitlab.cc-asp.fraunhofer.de/EMI_datamanagement/bwmd_ontology "^^xsd:string ;
+    omv:useImports pmd_kg:,
+        pmd_kg:brick,
+        pmd_kg:csvw,
+        pmd_kg:dc,
+        pmd_kg:dcam,
+        pmd_kg:dcat,
+        pmd_kg:dcmitype,
+        pmd_kg:dcterms,
+        pmd_kg:doap,
+        pmd_kg:foaf,
+        pmd_kg:graph_designer,
+        pmd_kg:mid,
+        pmd_kg:obo,
+        pmd_kg:odrl,
+        pmd_kg:org,
+        pmd_kg:owl,
+        pmd_kg:prof,
+        pmd_kg:prov,
+        pmd_kg:qb,
+        pmd_kg:rdf,
+        pmd_kg:rdfs,
+        pmd_kg:schema,
+        pmd_kg:sh,
+        pmd_kg:skos,
+        pmd_kg:sosa,
+        pmd_kg:ssn,
+        pmd_kg:time,
+        pmd_kg:vann,
+        pmd_kg:void,
+        pmd_kg:xml,
+        pmd_kg:xsd .
+
+pmd_kg:cc a omv:Ontology .
+
+pmd_kg:cco a omv:Ontology ;
+    omv:description "Comprise twelve ontologies that contain classes and relations that are used in many domains of interest."^^xsd:string ;
+    omv:modificationDate "15-Mar-22"^^xsd:string ;
+    omv:name "Common Core Ontology"^^xsd:string ;
+    omv:resourceLocator "https://github.com/CommonCoreOntology/CommonCoreOntologies "^^xsd:string .
+
+pmd_kg:chemistry a omv:Ontology .
+
+pmd_kg:dctype a omv:Ontology .
+
+pmd_kg:emmo-annotations a omv:Ontology .
+
+pmd_kg:emmo-physical-constants a omv:Ontology .
+
+pmd_kg:emmo-si-units a omv:Ontology .
+
+pmd_kg:emmo-units a omv:Ontology .
+
+pmd_kg:emmo_mechanical_testing a omv:Ontology ;
+    omv:description "Mechanical testing"^^xsd:string ;
+    omv:modificationDate "1-Jun-22"^^xsd:string ;
+    omv:name "EMMO Mechanical Testing"^^xsd:string ;
+    omv:numClasses 818.0 ;
+    omv:numProperties 67.0 ;
+    omv:resourceLocator "https://github.com/emmo-repo/domain-mechanical-testing "^^xsd:string ;
+    omv:useImports pmd_kg:,
+        pmd_kg:annotations,
+        pmd_kg:brick,
+        pmd_kg:chemistry,
+        pmd_kg:csvw,
+        pmd_kg:dc,
+        pmd_kg:dcam,
+        pmd_kg:dcat,
+        pmd_kg:dcmitype,
+        pmd_kg:dcterms,
+        pmd_kg:doap,
+        pmd_kg:emmo,
+        pmd_kg:foaf,
+        pmd_kg:isq,
+        pmd_kg:odrl,
+        pmd_kg:org,
+        pmd_kg:owl,
+        pmd_kg:prof,
+        pmd_kg:prov,
+        pmd_kg:qb,
+        pmd_kg:rdf,
+        pmd_kg:rdfs,
+        pmd_kg:schema,
+        pmd_kg:sh,
+        pmd_kg:skos,
+        pmd_kg:sosa,
+        pmd_kg:ssn,
+        pmd_kg:time,
+        pmd_kg:vann,
+        pmd_kg:void,
+        pmd_kg:xml,
+        pmd_kg:xsd .
+
+pmd_kg:emmo_microstructure a omv:Ontology ;
+    omv:description "Metallic microstructures"^^xsd:string ;
+    omv:modificationDate "11-Feb-20"^^xsd:string ;
+    omv:name "EMMO Microstructure domain ontology"^^xsd:string ;
+    omv:numClasses 61.0 ;
+    omv:numProperties 2.0 ;
+    omv:resourceLocator "https://github.com/jesper-friis/emmo-microstructure "^^xsd:string ;
+    omv:useImports pmd_kg:,
+        pmd_kg:brick,
+        pmd_kg:csvw,
+        pmd_kg:dc,
+        pmd_kg:dcam,
+        pmd_kg:dcat,
+        pmd_kg:dcmitype,
+        pmd_kg:dcterms,
+        pmd_kg:doap,
+        pmd_kg:emmo-annotations,
+        pmd_kg:emmo-physical-constants,
+        pmd_kg:emmo-si-units,
+        pmd_kg:emmo-units,
+        pmd_kg:foaf,
+        pmd_kg:odrl,
+        pmd_kg:org,
+        pmd_kg:owl,
+        pmd_kg:prof,
+        pmd_kg:prov,
+        pmd_kg:qb,
+        pmd_kg:rdf,
+        pmd_kg:rdfs,
+        pmd_kg:schema,
+        pmd_kg:sh,
+        pmd_kg:skos,
+        pmd_kg:sosa,
+        pmd_kg:ssn,
+        pmd_kg:time,
+        pmd_kg:vann,
+        pmd_kg:void,
+        pmd_kg:xml,
+        pmd_kg:xsd .
+
+pmd_kg:gr a omv:Ontology .
+
+pmd_kg:graph_designer a omv:Ontology .
+
+pmd_kg:isq a omv:Ontology .
+
+pmd_kg:miProtocol a omv:Ontology .
+
+pmd_kg:mid a omv:Ontology .
+
+pmd_kg:mseo a omv:Ontology ;
+    omv:description "Material Sience and Engineering"^^xsd:string ;
+    omv:modificationDate "11-Mar-22"^^xsd:string ;
+    omv:name "Material Science and Engineering Ontology"^^xsd:string ;
+    omv:numClasses 1691.0 ;
+    omv:numProperties 317.0 ;
+    omv:resourceLocator ""^^xsd:string .
+
+pmd_kg:npo a omv:Ontology .
+
+pmd_kg:owl2xml a omv:Ontology .
+
+pmd_kg:p-plan a omv:Ontology .
+
+pmd_kg:p1 a omv:Ontology .
+
+pmd_kg:p2 a omv:Ontology .
+
+pmd_kg:pmdco a omv:Ontology ;
+    omv:description "Materials Science experiment"^^xsd:string ;
+    omv:modificationDate "16-Jul-21"^^xsd:string ;
+    omv:name "PMD Core Ontology"^^xsd:string ;
+    omv:numClasses 26.0 ;
+    omv:numProperties 66.0 ;
+    omv:resourceLocator "https://github.com/materialdigital/core-ontology "^^xsd:string ;
+    omv:useImports pmd_kg:,
+        pmd_kg:brick,
+        pmd_kg:csvw,
+        pmd_kg:dc,
+        pmd_kg:dcam,
+        pmd_kg:dcat,
+        pmd_kg:dcmitype,
+        pmd_kg:dcterms,
+        pmd_kg:doap,
+        pmd_kg:foaf,
+        pmd_kg:odrl,
+        pmd_kg:org,
+        pmd_kg:owl,
+        pmd_kg:prof,
+        pmd_kg:prov,
+        pmd_kg:qb,
+        pmd_kg:rdf,
+        pmd_kg:rdfs,
+        pmd_kg:schema,
+        pmd_kg:sh,
+        pmd_kg:skos,
+        pmd_kg:sosa,
+        pmd_kg:ssn,
+        pmd_kg:time,
+        pmd_kg:vann,
+        pmd_kg:void,
+        pmd_kg:xml,
+        pmd_kg:xsd .
+
+pmd_kg:protege a omv:Ontology .
+
+pmd_kg:provo a omv:Ontology ;
+    omv:description "Represent and interchange provenance information"^^xsd:string ;
+    omv:modificationDate "30-Apr-13"^^xsd:string ;
+    omv:name "PROV Ontology"^^xsd:string ;
+    omv:numClasses 31.0 ;
+    omv:numProperties 50.0 ;
+    omv:resourceLocator "https://www.w3.org/TR/prov-o/ "^^xsd:string ;
+    omv:useImports pmd_kg:brick,
+        pmd_kg:csvw,
+        pmd_kg:dc,
+        pmd_kg:dcam,
+        pmd_kg:dcat,
+        pmd_kg:dcmitype,
+        pmd_kg:dcterms,
+        pmd_kg:doap,
+        pmd_kg:foaf,
+        pmd_kg:odrl,
+        pmd_kg:org,
+        pmd_kg:owl,
+        pmd_kg:prof,
+        pmd_kg:prov,
+        pmd_kg:qb,
+        pmd_kg:rdf,
+        pmd_kg:rdfs,
+        pmd_kg:schema,
+        pmd_kg:sh,
+        pmd_kg:skos,
+        pmd_kg:sosa,
+        pmd_kg:ssn,
+        pmd_kg:time,
+        pmd_kg:vann,
+        pmd_kg:void,
+        pmd_kg:xml,
+        pmd_kg:xsd .
+
+pmd_kg:ro a omv:Ontology .
+
+pmd_kg:service a omv:Ontology .
+
+pmd_kg:snap a omv:Ontology .
+
+pmd_kg:so a omv:Ontology ;
+    omv:description "Deneral concept definition of a service"^^xsd:string ;
+    omv:modificationDate "24-Nov-13"^^xsd:string ;
+    omv:name "Service Ontology"^^xsd:string ;
+    omv:numClasses 7.0 ;
+    omv:numProperties 8.0 ;
+    omv:resourceLocator "http://dini-ag-kim.github.io/service-ontology/service.ttl "^^xsd:string ;
+    omv:useImports pmd_kg:brick,
+        pmd_kg:cc,
+        pmd_kg:csvw,
+        pmd_kg:dc,
+        pmd_kg:dcam,
+        pmd_kg:dcat,
+        pmd_kg:dcmitype,
+        pmd_kg:dcterms,
+        pmd_kg:dctype,
+        pmd_kg:doap,
+        pmd_kg:foaf,
+        pmd_kg:gr,
+        pmd_kg:odrl,
+        pmd_kg:org,
+        pmd_kg:owl,
+        pmd_kg:prof,
+        pmd_kg:prov,
+        pmd_kg:qb,
+        pmd_kg:rdf,
+        pmd_kg:rdfs,
+        pmd_kg:schema,
+        pmd_kg:schema1,
+        pmd_kg:service,
+        pmd_kg:sh,
+        pmd_kg:skos,
+        pmd_kg:sosa,
+        pmd_kg:ssn,
+        pmd_kg:time,
+        pmd_kg:vann,
+        pmd_kg:voaf,
+        pmd_kg:void,
+        pmd_kg:vs,
+        pmd_kg:xml,
+        pmd_kg:xsd .
+
+pmd_kg:sp a omv:Ontology ;
+    omv:description "Experimental protocols"^^xsd:string ;
+    omv:modificationDate "3-Dec-14"^^xsd:string ;
+    omv:name "SMART-Protocols"^^xsd:string ;
+    omv:numClasses 86.0 ;
+    omv:numProperties 8.0 ;
+    omv:resourceLocator "https://github.com/oeg-upm/SMART-Protocols "^^xsd:string ;
+    omv:useImports pmd_kg:,
+        pmd_kg:MGEDOntology,
+        pmd_kg:SO,
+        pmd_kg:Thesaurus,
+        pmd_kg:bfo,
+        pmd_kg:brick,
+        pmd_kg:csvw,
+        pmd_kg:dc,
+        pmd_kg:dcam,
+        pmd_kg:dcat,
+        pmd_kg:dcmitype,
+        pmd_kg:dcterms,
+        pmd_kg:doap,
+        pmd_kg:foaf,
+        pmd_kg:miProtocol,
+        pmd_kg:npo,
+        pmd_kg:obo,
+        pmd_kg:odrl,
+        pmd_kg:org,
+        pmd_kg:owl,
+        pmd_kg:owl2xml,
+        pmd_kg:p-plan,
+        pmd_kg:p1,
+        pmd_kg:p2,
+        pmd_kg:prof,
+        pmd_kg:protege,
+        pmd_kg:prov,
+        pmd_kg:qb,
+        pmd_kg:rdf,
+        pmd_kg:rdfs,
+        pmd_kg:ro,
+        pmd_kg:schema,
+        pmd_kg:sh,
+        pmd_kg:skos,
+        pmd_kg:snap,
+        pmd_kg:sosa,
+        pmd_kg:span,
+        pmd_kg:ssn,
+        pmd_kg:swrl,
+        pmd_kg:swrlb,
+        pmd_kg:time,
+        pmd_kg:vann,
+        pmd_kg:void,
+        pmd_kg:xml,
+        pmd_kg:xsd,
+        pmd_kg:xsp .
+
+pmd_kg:span a omv:Ontology .
+
+pmd_kg:swrl a omv:Ontology .
+
+pmd_kg:swrlb a omv:Ontology .
+
+pmd_kg:wot a omv:Ontology .
+
+pmd_kg:xsp a omv:Ontology .
+
+pmd_kg:bfo a omv:Ontology ;
+    omv:description "Supporting information retrieval, analysis and integration in scientific and other domains"^^xsd:string ;
+    omv:modificationDate "16-Feb-22"^^xsd:string ;
+    omv:name "Basic Formal Ontology"^^xsd:string ;
+    omv:numClasses 36.0 ;
+    omv:numProperties 64.0 ;
+    omv:resourceLocator "https://github.com/BFO-ontology/BFO-2020 "^^xsd:string ;
+    omv:useImports pmd_kg:brick,
+        pmd_kg:csvw,
+        pmd_kg:dc,
+        pmd_kg:dcam,
+        pmd_kg:dcat,
+        pmd_kg:dcmitype,
+        pmd_kg:dcterms,
+        pmd_kg:doap,
+        pmd_kg:foaf,
+        pmd_kg:obo,
+        pmd_kg:odrl,
+        pmd_kg:org,
+        pmd_kg:owl,
+        pmd_kg:prof,
+        pmd_kg:prov,
+        pmd_kg:qb,
+        pmd_kg:rdf,
+        pmd_kg:rdfs,
+        pmd_kg:schema,
+        pmd_kg:sh,
+        pmd_kg:skos,
+        pmd_kg:sosa,
+        pmd_kg:ssn,
+        pmd_kg:time,
+        pmd_kg:vann,
+        pmd_kg:void,
+        pmd_kg:xml,
+        pmd_kg:xsd .
+
+pmd_kg:emmo a omv:Ontology ;
+    omv:description "A multidisciplinary ontology for applied sciences"^^xsd:string ;
+    omv:modificationDate "29-May-22"^^xsd:string ;
+    omv:name "Elementary Multiperspective Material Ontology"^^xsd:string ;
+    omv:numClasses 463.0 ;
+    omv:numProperties 49.0 ;
+    omv:resourceLocator "https://github.com/emmo-repo/EMMO "^^xsd:string ;
+    omv:useImports pmd_kg:,
+        pmd_kg:brick,
+        pmd_kg:csvw,
+        pmd_kg:dc,
+        pmd_kg:dcam,
+        pmd_kg:dcat,
+        pmd_kg:dcmitype,
+        pmd_kg:dcterms,
+        pmd_kg:doap,
+        pmd_kg:foaf,
+        pmd_kg:odrl,
+        pmd_kg:org,
+        pmd_kg:owl,
+        pmd_kg:prof,
+        pmd_kg:prov,
+        pmd_kg:qb,
+        pmd_kg:rdf,
+        pmd_kg:rdfs,
+        pmd_kg:schema,
+        pmd_kg:sh,
+        pmd_kg:skos,
+        pmd_kg:sosa,
+        pmd_kg:ssn,
+        pmd_kg:time,
+        pmd_kg:vann,
+        pmd_kg:void,
+        pmd_kg:xml,
+        pmd_kg:xsd .
+
+pmd_kg:schema1 a omv:Ontology .
+
+pmd_kg:voaf a omv:Ontology .
+
+pmd_kg:vs a omv:Ontology .
+
+pmd_kg:obo a omv:Ontology .
+
+pmd_kg: a omv:Ontology .
+
+pmd_kg:brick a omv:Ontology .
+
+pmd_kg:csvw a omv:Ontology .
+
+pmd_kg:dcam a omv:Ontology .
+
+pmd_kg:dcat a omv:Ontology .
+
+pmd_kg:dcmitype a omv:Ontology .
+
+pmd_kg:dcterms a omv:Ontology .
+
+pmd_kg:doap a omv:Ontology .
+
+pmd_kg:odrl a omv:Ontology .
+
+pmd_kg:org a omv:Ontology .
+
+pmd_kg:owl a omv:Ontology .
+
+pmd_kg:prof a omv:Ontology .
+
+pmd_kg:prov a omv:Ontology .
+
+pmd_kg:qb a omv:Ontology .
+
+pmd_kg:rdf a omv:Ontology .
+
+pmd_kg:rdfs a omv:Ontology .
+
+pmd_kg:schema a omv:Ontology .
+
+pmd_kg:sh a omv:Ontology .
+
+pmd_kg:skos a omv:Ontology .
+
+pmd_kg:sosa a omv:Ontology .
+
+pmd_kg:time a omv:Ontology .
+
+pmd_kg:vann a omv:Ontology .
+
+pmd_kg:void a omv:Ontology .
+
+pmd_kg:xml a omv:Ontology .
+
+pmd_kg:xsd a omv:Ontology .
+
+pmd_kg:dc a omv:Ontology ;
+    omv:description "Specification of all metadata terms "^^xsd:string ;
+    omv:modificationDate "20-Jan-20"^^xsd:string ;
+    omv:name "The Dublin Core"^^xsd:string ;
+    omv:numClasses 22.0 ;
+    omv:numProperties 55.0 ;
+    omv:resourceLocator "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/ "^^xsd:string .
+
+pmd_kg:foaf a omv:Ontology ;
+    omv:description "Describe people and social relationship on the Web"^^xsd:string ;
+    omv:modificationDate "27-Aug-17"^^xsd:string ;
+    omv:name "Friend Of A Friend ontology"^^xsd:string ;
+    omv:numClasses 19.0 ;
+    omv:numProperties 71.0 ;
+    omv:resourceLocator "https://raw.githubusercontent.com/ESIPFed/toolmatch-ontology/master/v3/foaf.owl "^^xsd:string ;
+    omv:useImports pmd_kg:brick,
+        pmd_kg:csvw,
+        pmd_kg:dc,
+        pmd_kg:dcam,
+        pmd_kg:dcat,
+        pmd_kg:dcmitype,
+        pmd_kg:dcterms,
+        pmd_kg:doap,
+        pmd_kg:foaf,
+        pmd_kg:odrl,
+        pmd_kg:org,
+        pmd_kg:owl,
+        pmd_kg:prof,
+        pmd_kg:prov,
+        pmd_kg:qb,
+        pmd_kg:rdf,
+        pmd_kg:rdfs,
+        pmd_kg:schema,
+        pmd_kg:sh,
+        pmd_kg:skos,
+        pmd_kg:sosa,
+        pmd_kg:ssn,
+        pmd_kg:time,
+        pmd_kg:vann,
+        pmd_kg:void,
+        pmd_kg:vs,
+        pmd_kg:wot,
+        pmd_kg:xml,
+        pmd_kg:xsd .
+
+pmd_kg:ssn a omv:Ontology ;
+    omv:description "Describing sensors and their observations"^^xsd:string ;
+    omv:modificationDate "6-May-22"^^xsd:string ;
+    omv:name "Semantic Sensor Network Ontology"^^xsd:string ;
+    omv:numClasses 16.0 ;
+    omv:numProperties 23.0 ;
+    omv:resourceLocator "https://raw.githubusercontent.com/w3c/sdw/gh-pages/ssn/integrated/sosa.ttl "^^xsd:string ;
+    omv:useImports pmd_kg:brick,
+        pmd_kg:csvw,
+        pmd_kg:dc,
+        pmd_kg:dcam,
+        pmd_kg:dcat,
+        pmd_kg:dcmitype,
+        pmd_kg:dcterms,
+        pmd_kg:doap,
+        pmd_kg:foaf,
+        pmd_kg:odrl,
+        pmd_kg:org,
+        pmd_kg:owl,
+        pmd_kg:prof,
+        pmd_kg:prov,
+        pmd_kg:qb,
+        pmd_kg:rdf,
+        pmd_kg:rdfs,
+        pmd_kg:schema,
+        pmd_kg:schema1,
+        pmd_kg:sh,
+        pmd_kg:skos,
+        pmd_kg:sosa,
+        pmd_kg:ssn,
+        pmd_kg:time,
+        pmd_kg:vann,
+        pmd_kg:voaf,
+        pmd_kg:void,
+        pmd_kg:xml,
+        pmd_kg:xsd .
+
