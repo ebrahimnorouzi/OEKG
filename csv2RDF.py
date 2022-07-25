@@ -27,7 +27,7 @@ class xlsx2RDF(object):
         self.g.bind("pmd_kg", self.pmd_kg)
         
         # load .csv file to dataframe
-        self.data = pd.read_csv('MSE_ontologies_pmd.csv', sep=',', encoding_errors='ignore').fillna('')
+        self.data = pd.read_csv('MSE_ontologies.csv', sep=',', encoding_errors='ignore').fillna('')
     
         
     def create_triples(self):
@@ -96,7 +96,7 @@ class xlsx2RDF(object):
                     except:
                         pass
             
-        self.g.serialize(destination='mse_ontologies_pmd.ttl', format='ttl')
+        self.g.serialize(destination='mse_ontologies.ttl', format='ttl')
 
 
 

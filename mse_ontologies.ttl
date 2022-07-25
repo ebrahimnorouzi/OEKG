@@ -162,7 +162,11 @@ pmd_kg:elssi-emd a omv:Ontology ;
 
 pmd_kg:emmo-annotations a omv:Ontology .
 
+pmd_kg:emmo-core a omv:Ontology .
+
 pmd_kg:emmo-physical-constants a omv:Ontology .
+
+pmd_kg:emmo-properties a omv:Ontology .
 
 pmd_kg:emmo-si-units a omv:Ontology .
 
@@ -434,14 +438,6 @@ pmd_kg:mdo a omv:Ontology ;
 
 pmd_kg:metadata a omv:Ontology .
 
-pmd_kg:metal-alloy a omv:Ontology ;
-    omv:description "Materials representation"^^xsd:string ;
-    omv:modificationDate ""^^xsd:string ;
-    omv:name "metal-alloy"^^xsd:string ;
-    omv:numClasses 16.0 ;
-    omv:numProperties 30.0 ;
-    omv:resourceLocator "https://emmc.info/taxonda/metal-alloy/ "^^xsd:string .
-
 pmd_kg:miProtocol a omv:Ontology .
 
 pmd_kg:mid a omv:Ontology .
@@ -528,13 +524,7 @@ pmd_kg:provo a omv:Ontology ;
     omv:name "PROV Ontology"^^xsd:string ;
     omv:numClasses 31.0 ;
     omv:numProperties 50.0 ;
-    omv:resourceLocator "https://www.w3.org/TR/prov-o/ "^^xsd:string ;
-    omv:useImports pmd_kg:,
-        pmd_kg:owl,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:xml,
-        pmd_kg:xsd .
+    omv:resourceLocator "https://www.w3.org/TR/prov-o/ "^^xsd:string .
 
 pmd_kg:pte a omv:Ontology .
 
@@ -669,6 +659,8 @@ pmd_kg:cco a omv:Ontology ;
     omv:description "Comprise twelve ontologies that contain classes and relations that are used in many domains of interest."^^xsd:string ;
     omv:modificationDate "15-Mar-22"^^xsd:string ;
     omv:name "Common Core Ontology"^^xsd:string ;
+    omv:numClasses 1430.0 ;
+    omv:numProperties 270.0 ;
     omv:resourceLocator ""^^xsd:string ;
     omv:useImports pmd_kg:,
         pmd_kg:CommonCoreOntologies,
@@ -709,6 +701,23 @@ pmd_kg:mambo a omv:Ontology ;
     omv:resourceLocator "https://github.com/daimoners/MAMBO "^^xsd:string ;
     omv:useImports pmd_kg:,
         pmd_kg:mambo,
+        pmd_kg:owl,
+        pmd_kg:rdf,
+        pmd_kg:rdfs,
+        pmd_kg:xml,
+        pmd_kg:xsd .
+
+pmd_kg:metal-alloy a omv:Ontology ;
+    omv:description "Materials representation"^^xsd:string ;
+    omv:modificationDate ""^^xsd:string ;
+    omv:name "metal-alloy"^^xsd:string ;
+    omv:numClasses 16.0 ;
+    omv:numProperties 30.0 ;
+    omv:resourceLocator "https://emmc.info/taxonda/metal-alloy/ "^^xsd:string ;
+    omv:useImports pmd_kg:,
+        pmd_kg:emmo-core,
+        pmd_kg:emmo-properties,
+        pmd_kg:metal-alloy,
         pmd_kg:owl,
         pmd_kg:rdf,
         pmd_kg:rdfs,
