@@ -3,15 +3,13 @@
 from rdflib import Graph
 from rdflib import URIRef, BNode, Literal
 from rdflib import Namespace
-from rdflib.namespace import OWL, RDF, RDFS, FOAF, XSD
+from rdflib.namespace import RDF, XSD
 import pandas as pd
 import zipfile
 from io import StringIO, BytesIO
 from urllib.request import urlopen
 from rdflib.plugin import register, Serializer, Parser
 register('text/rdf+n3', Parser, 'rdflib.plugins.parsers.notation3', 'N3Parser')
-
-df = pd.read_excel('MSE_ontologies.xlsx')
 
 class xlsx2RDF(object):
 
@@ -29,7 +27,7 @@ class xlsx2RDF(object):
         self.g.bind("pmd_kg", self.pmd_kg)
         
         # load .csv file to dataframe
-        self.data = pd.read_csv('MSE_ontologies.csv', sep=',', encoding_errors='ignore').fillna('')
+        self.data = pd.read_csv('MSE_ontologies_pmd.csv', sep=',', encoding_errors='ignore').fillna('')
     
         
     def create_triples(self):
@@ -82,17 +80,23 @@ class xlsx2RDF(object):
                 else:
                     Ontology_format = 'xml' if ontology_file[-3:]=='owl' else ontology_file[-3:]
 
-                try:
-                    g = Graph().parse(ontology_file, format=Ontology_format)
+                if row[1].lower().replace(" ", "_") == "cco" or row[1].lower().replace(" ", "_") == "skos_mdo":
+                    g = Graph().parse(ontology_file, format='xml')
                     for prefix, namespace in g.namespaces():
                         prefix = URIRef(self.pmd_kg + prefix)
                         self.g.add((prefix, RDF.type, omv.Ontology))
                         self.g.add((ontology_short_name, omv.useImports, prefix))
-                except:
-                    pass
-
+                else:
+                    try:
+                        g = Graph().parse(ontology_file, format=Ontology_format)
+                        for prefix, namespace in g.namespaces():
+                            prefix = URIRef(self.pmd_kg + prefix)
+                            self.g.add((prefix, RDF.type, omv.Ontology))
+                            self.g.add((ontology_short_name, omv.useImports, prefix))
+                    except:
+                        pass
             
-        self.g.serialize(destination='mse_ontologies.ttl', format='ttl')
+        self.g.serialize(destination='mse_ontologies_pmd.ttl', format='ttl')
 
 
 

@@ -1,13 +1,13 @@
 
-from rdflib import Graph, Literal, URIRef, BNode
-from rdflib.term import Identifier
-from rdflib.collection import Collection
-from rdflib.namespace import RDF, RDFS, SKOS, XSD, OWL
+import rdflib#from rdflib import Graph#, Literal, URIRef, BNode
+#from rdflib.term import Identifier
+#from rdflib.collection import Collection
+#from rdflib.namespace import RDF, RDFS, SKOS, XSD, OWL
 import rdflib.plugins.sparql.update
-import owlrl.RDFSClosure
+#import owlrl.RDFSClosure
 
-g = Graph()
-g.parse('mse_ontologies.ttl')
+g = rdflib.Graph()
+g.parse('mse_ontologies_pmd.ttl', format="ttl")
 
 query1 = """
 SELECT distinct ?s1 ?s2 ?q1 #(COUNT(?q1) AS ?count)
@@ -32,4 +32,5 @@ qres = g.query(query2)
 
 for row in qres:
     print(row, '\n')
-    #print(row['q1'], "frequency", row['count'])
+    #print(row['q1'].replace('http://www.materialdigital.de/ontology/', ''))
+    #print(row['count'])
