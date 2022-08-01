@@ -28,9 +28,17 @@ WHERE {
 } GROUP BY ?q1
 ORDER BY DESC(?count)
 """
-qres = g.query(query2)
+
+query3 = """
+SELECT ?s1 ?s2
+WHERE {
+    pmd_kg:pmd_projects omv:contributesToOntology ?s1 ,?s2 .
+    ?s1 omv:useImports ?s2 .
+} 
+"""
+qres = g.query(query3)
 
 for row in qres:
-    print(row, '\n')
+    print(row)
     #print(row['q1'].replace('http://www.materialdigital.de/ontology/', ''))
     #print(row['count'])
