@@ -1,911 +1,2091 @@
+@prefix oekg: <http://example/oekg/> .
 @prefix omv: <http://omv.ontoware.org/2005/05/ontology#> .
-@prefix pmd_kg: <http://www.materialdigital.de/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-pmd_kg:pmd_projects a omv:Organisation ;
-    omv:contributesToOntology pmd_kg:bfo,
-        pmd_kg:bionto,
-        pmd_kg:bwmd,
-        pmd_kg:cco,
-        pmd_kg:dc,
-        pmd_kg:deb,
-        pmd_kg:diso,
-        pmd_kg:elssi-emd,
-        pmd_kg:emmo,
-        pmd_kg:emmo_atomistic,
-        pmd_kg:emmo_battinfo,
-        pmd_kg:emmo_bvc,
-        pmd_kg:emmo_crystallography,
-        pmd_kg:emmo_datamodel,
-        pmd_kg:emmo_mappings,
-        pmd_kg:emmo_mechanical_testing,
-        pmd_kg:emmo_microstructure,
-        pmd_kg:enanomapper,
-        pmd_kg:foaf,
-        pmd_kg:freeclass_,
-        pmd_kg:gpo,
-        pmd_kg:mambo,
-        pmd_kg:materialsontology,
-        pmd_kg:matonto,
-        pmd_kg:matowl,
-        pmd_kg:mdo,
-        pmd_kg:metal-alloy,
-        pmd_kg:mmoy,
-        pmd_kg:mseo,
-        pmd_kg:nanomine,
-        pmd_kg:npo,
-        pmd_kg:periodictable,
-        pmd_kg:pmdco,
-        pmd_kg:provo,
-        pmd_kg:skos_mdo,
-        pmd_kg:so,
-        pmd_kg:sp,
-        pmd_kg:ssn,
-        pmd_kg:tndv .
-
-pmd_kg:CHEBI a omv:Ontology .
-
-pmd_kg:CommonCoreOntologies a omv:Ontology .
-
-pmd_kg:FIX a omv:Ontology .
-
-pmd_kg:GO a omv:Ontology .
-
-pmd_kg:MGEDOntology a omv:Ontology .
-
-pmd_kg:PATO a omv:Ontology .
-
-pmd_kg:REX a omv:Ontology .
-
-pmd_kg:SO a omv:Ontology .
-
-pmd_kg:UO a omv:Ontology .
-
-pmd_kg:bionto a omv:Ontology ;
-    omv:description "Biomass (materials) and processing technologies"^^xsd:string ;
-    omv:modificationDate ""^^xsd:string ;
-    omv:name "Bionto"^^xsd:string ;
-    omv:resourceLocator "https://emmc.info/taxonda/bionto/ "^^xsd:string .
-
-pmd_kg:bwmd a omv:Ontology ;
-    omv:description "Material Digital Ontology"^^xsd:string ;
-    omv:modificationDate "22_Nov 2021"^^xsd:string ;
-    omv:name "Baden W�rttemberg Material Digital Ontology"^^xsd:string ;
-    omv:numClasses 787.0 ;
-    omv:numProperties 39.0 ;
-    omv:resourceLocator "https://gitlab.cc-asp.fraunhofer.de/EMI_datamanagement/bwmd_ontology "^^xsd:string ;
-    omv:useImports pmd_kg:,
-        pmd_kg:dc,
-        pmd_kg:foaf,
-        pmd_kg:graph_designer,
-        pmd_kg:mid,
-        pmd_kg:obo,
-        pmd_kg:owl,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:terms,
-        pmd_kg:xml,
-        pmd_kg:xsd .
-
-pmd_kg:calculation a omv:Ontology .
-
-pmd_kg:ccont a omv:Ontology .
-
-pmd_kg:chear a omv:Ontology .
-
-pmd_kg:cheminf a omv:Ontology .
-
-pmd_kg:cheminf-core a omv:Ontology .
-
-pmd_kg:cheminf2 a omv:Ontology .
-
-pmd_kg:chemistry a omv:Ontology .
-
-pmd_kg:chmo a omv:Ontology .
-
-pmd_kg:cito a omv:Ontology .
-
-pmd_kg:cmo a omv:Ontology .
-
-pmd_kg:core4 a omv:Ontology .
-
-pmd_kg:dcam a omv:Ontology .
-
-pmd_kg:dct a omv:Ontology .
-
-pmd_kg:dctype a omv:Ontology .
-
-pmd_kg:deb a omv:Ontology ;
-    omv:description "Medical devices, experimental scaffolds and biomaterials"^^xsd:string ;
-    omv:modificationDate "2-Jun-21"^^xsd:string ;
-    omv:name "The Devices, Experimental scaffolds and Biomaterials Ontology"^^xsd:string ;
-    omv:numClasses 601.0 ;
-    omv:numProperties 121.0 ;
-    omv:resourceLocator "https://github.com/ProjectDebbie/Ontology_DEB "^^xsd:string ;
-    omv:useImports pmd_kg:,
-        pmd_kg:dc,
-        pmd_kg:obda,
-        pmd_kg:owl,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:skos,
-        pmd_kg:xml,
-        pmd_kg:xsd .
-
-pmd_kg:diso a omv:Ontology ;
-    omv:description "Defects in crystalline materials"^^xsd:string ;
-    omv:modificationDate "2-Jun-22"^^xsd:string ;
-    omv:name "Dislocation Ontology"^^xsd:string ;
-    omv:numClasses 31.0 ;
-    omv:numProperties 30.0 ;
-    omv:resourceLocator "https://github.com/Materials-Data-Science-and-Informatics/dislocation-ontology "^^xsd:string ;
-    omv:useImports pmd_kg:,
-        pmd_kg:owl,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:terms,
-        pmd_kg:vann,
-        pmd_kg:xml,
-        pmd_kg:xsd .
-
-pmd_kg:efo a omv:Ontology .
-
-pmd_kg:electrochemistry a omv:Ontology .
-
-pmd_kg:elssi-emd a omv:Ontology ;
-    omv:description "Economics and logistics of standards compliant schemas and ontologies for interoperability-Engineering Material Data"^^xsd:string ;
-    omv:modificationDate ""^^xsd:string ;
-    omv:name "ELSSI-EMD ontology"^^xsd:string ;
-    omv:numClasses 35.0 ;
-    omv:numProperties 37.0 ;
-    omv:resourceLocator ""^^xsd:string .
-
-pmd_kg:emmo-annotations a omv:Ontology .
-
-pmd_kg:emmo-core a omv:Ontology .
-
-pmd_kg:emmo-physical-constants a omv:Ontology .
-
-pmd_kg:emmo-properties a omv:Ontology .
-
-pmd_kg:emmo-si-units a omv:Ontology .
-
-pmd_kg:emmo-units a omv:Ontology .
-
-pmd_kg:emmo_atomistic a omv:Ontology ;
-    omv:description "Atomistic and electronic modelling"^^xsd:string ;
-    omv:modificationDate "7-May-21"^^xsd:string ;
-    omv:name "EMMO Atomistic and Electronic Modelling"^^xsd:string ;
-    omv:numClasses 533.0 ;
-    omv:numProperties 49.0 ;
-    omv:resourceLocator "https://github.com/emmo-repo/domain-atomistic "^^xsd:string ;
-    omv:useImports pmd_kg:,
-        pmd_kg:core,
-        pmd_kg:emmo,
-        pmd_kg:owl,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:term,
-        pmd_kg:xml,
-        pmd_kg:xsd .
-
-pmd_kg:emmo_battinfo a omv:Ontology ;
-    omv:description "Batteries and their interfaces"^^xsd:string ;
-    omv:modificationDate "9-Jun-22"^^xsd:string ;
-    omv:name "EMMO Battery Interface Ontology"^^xsd:string ;
-    omv:numClasses 1875.0 ;
-    omv:numProperties 111.0 ;
-    omv:resourceLocator "https://github.com/BIG-MAP/BattINFO "^^xsd:string ;
-    omv:useImports pmd_kg:,
-        pmd_kg:annotations,
-        pmd_kg:dcterms,
-        pmd_kg:electrochemistry,
-        pmd_kg:emmo,
-        pmd_kg:owl,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:skos,
-        pmd_kg:xml,
-        pmd_kg:xsd .
-
-pmd_kg:emmo_bvc a omv:Ontology ;
-    omv:description "Model processes along the Battery value chain"^^xsd:string ;
-    omv:modificationDate "27-Jun-22"^^xsd:string ;
-    omv:name "EMMO Ontology for the Battery Value Chain (BVC)"^^xsd:string ;
-    omv:numClasses 182.0 ;
-    omv:numProperties 11.0 ;
-    omv:resourceLocator "https://github.com/Battery-Value-Chain-Ontology/ontology "^^xsd:string ;
-    omv:useImports pmd_kg:,
-        pmd_kg:annotations,
-        pmd_kg:emmo,
-        pmd_kg:gpo,
-        pmd_kg:isq,
-        pmd_kg:owl,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:skos,
-        pmd_kg:terms,
-        pmd_kg:xml,
-        pmd_kg:xsd .
-
-pmd_kg:emmo_crystallography a omv:Ontology ;
-    omv:description "Crystallography"^^xsd:string ;
-    omv:modificationDate "7-May-21"^^xsd:string ;
-    omv:name "EMMO Crystallography"^^xsd:string ;
-    omv:numClasses 1806.0 ;
-    omv:numProperties 56.0 ;
-    omv:resourceLocator "https://github.com/emmo-repo/domain-crystallography "^^xsd:string ;
-    omv:useImports pmd_kg:,
-        pmd_kg:dcterms,
-        pmd_kg:emmo,
-        pmd_kg:isq,
-        pmd_kg:owl,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:skos,
-        pmd_kg:xml,
-        pmd_kg:xsd .
-
-pmd_kg:emmo_datamodel a omv:Ontology ;
-    omv:description "Ontology-Based Data Modelling"^^xsd:string ;
-    omv:modificationDate "14-May-22"^^xsd:string ;
-    omv:name "EMMO Datamodel ontology"^^xsd:string ;
-    omv:numClasses 14.0 ;
-    omv:numProperties 9.0 ;
-    omv:resourceLocator "https://github.com/emmo-repo/datamodel-ontology "^^xsd:string ;
-    omv:useImports pmd_kg:,
-        pmd_kg:dcterms,
-        pmd_kg:emmo,
-        pmd_kg:owl,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:xml,
-        pmd_kg:xsd .
-
-pmd_kg:emmo_mappings a omv:Ontology ;
-    omv:description "Mapping to domains and ontological concepts"^^xsd:string ;
-    omv:modificationDate "31-Oct-21"^^xsd:string ;
-    omv:name "EMMO Mappings ontology"^^xsd:string ;
-    omv:numClasses 528.0 ;
-    omv:numProperties 53.0 ;
-    omv:resourceLocator "https://github.com/emmo-repo/domain-mappings "^^xsd:string ;
-    omv:useImports pmd_kg:,
-        pmd_kg:owl,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:xml,
-        pmd_kg:xsd .
-
-pmd_kg:emmo_mechanical_testing a omv:Ontology ;
-    omv:description "Mechanical testing"^^xsd:string ;
-    omv:modificationDate "1-Jun-22"^^xsd:string ;
-    omv:name "EMMO Mechanical Testing"^^xsd:string ;
-    omv:numClasses 818.0 ;
-    omv:numProperties 67.0 ;
-    omv:resourceLocator "https://github.com/emmo-repo/domain-mechanical-testing "^^xsd:string ;
-    omv:useImports pmd_kg:,
-        pmd_kg:annotations,
-        pmd_kg:chemistry,
-        pmd_kg:dcterms,
-        pmd_kg:emmo,
-        pmd_kg:isq,
-        pmd_kg:owl,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:skos,
-        pmd_kg:xml,
-        pmd_kg:xsd .
-
-pmd_kg:emmo_microstructure a omv:Ontology ;
-    omv:description "Metallic microstructures"^^xsd:string ;
-    omv:modificationDate "11-Feb-20"^^xsd:string ;
-    omv:name "EMMO Microstructure domain ontology"^^xsd:string ;
-    omv:numClasses 61.0 ;
-    omv:numProperties 2.0 ;
-    omv:resourceLocator "https://github.com/jesper-friis/emmo-microstructure "^^xsd:string ;
-    omv:useImports pmd_kg:,
-        pmd_kg:emmo-annotations,
-        pmd_kg:emmo-physical-constants,
-        pmd_kg:emmo-si-units,
-        pmd_kg:emmo-units,
-        pmd_kg:owl,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:xml,
-        pmd_kg:xsd .
-
-pmd_kg:enanomapper a omv:Ontology ;
-    omv:description "Nanomaterial safety assessment"^^xsd:string ;
-    omv:modificationDate "2-Jun-22"^^xsd:string ;
-    omv:name "eNanoMapper"^^xsd:string ;
-    omv:numClasses 12254.0 ;
-    omv:numProperties 15.0 ;
-    omv:resourceLocator "https://github.com/enanomapper/ontologies "^^xsd:string ;
-    omv:useImports pmd_kg:,
-        pmd_kg:Thesaurus,
-        pmd_kg:bibo,
-        pmd_kg:ccont,
-        pmd_kg:cheminf,
-        pmd_kg:cheminf-core,
-        pmd_kg:cheminf2,
-        pmd_kg:chmo,
-        pmd_kg:cito,
-        pmd_kg:core,
-        pmd_kg:core4,
-        pmd_kg:dc,
-        pmd_kg:efo,
-        pmd_kg:entity_attribute,
-        pmd_kg:entity_attribute3,
-        pmd_kg:entity_quality,
-        pmd_kg:envo,
-        pmd_kg:foaf,
-        pmd_kg:foo,
-        pmd_kg:ncbitaxon,
-        pmd_kg:npo,
-        pmd_kg:obo,
-        pmd_kg:obo1,
-        pmd_kg:oboInOwl,
-        pmd_kg:owl,
-        pmd_kg:pato,
-        pmd_kg:patterns,
-        pmd_kg:pav,
-        pmd_kg:protege,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:resource,
-        pmd_kg:skos,
-        pmd_kg:subsets,
-        pmd_kg:terms,
-        pmd_kg:uberon,
-        pmd_kg:uo,
-        pmd_kg:vann,
-        pmd_kg:xml,
-        pmd_kg:xsd,
-        pmd_kg:xsp .
-
-pmd_kg:entity_attribute a omv:Ontology .
-
-pmd_kg:entity_attribute3 a omv:Ontology .
-
-pmd_kg:entity_quality a omv:Ontology .
-
-pmd_kg:envo a omv:Ontology .
-
-pmd_kg:foo a omv:Ontology .
-
-pmd_kg:freeclass_ a omv:Ontology ;
-    omv:description "Construction and building materials and services provides"^^xsd:string ;
-    omv:modificationDate ""^^xsd:string ;
-    omv:name "FreeClassOWL Ontology"^^xsd:string ;
-    omv:numClasses 5676.0 ;
-    omv:numProperties 174.0 ;
-    omv:resourceLocator "https://www.freeclass.eu/freeclass_v1.html#OntologyDescription "^^xsd:string .
-
-pmd_kg:geo a omv:Ontology .
-
-pmd_kg:gr a omv:Ontology .
-
-pmd_kg:graph_designer a omv:Ontology .
-
-pmd_kg:map a omv:Ontology .
-
-pmd_kg:materialsontology a omv:Ontology ;
-    omv:description "Exchanging Materials Information and Knowledge"^^xsd:string ;
-    omv:modificationDate ""^^xsd:string ;
-    omv:name "Materials Ontology"^^xsd:string ;
-    omv:numClasses 606.0 ;
-    omv:numProperties 31.0 ;
-    omv:resourceLocator ""^^xsd:string .
-
-pmd_kg:matonto a omv:Ontology ;
-    omv:description "Materials discovery"^^xsd:string ;
-    omv:modificationDate "8-Aug-14"^^xsd:string ;
-    omv:name "MatOnto"^^xsd:string ;
-    omv:numClasses 78.0 ;
-    omv:numProperties 10.0 ;
-    omv:resourceLocator "https://github.com/inovexcorp/MatOnto-Ontologies "^^xsd:string ;
-    omv:useImports pmd_kg:,
-        pmd_kg:owl,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:xml,
-        pmd_kg:xsd .
-
-pmd_kg:matowl a omv:Ontology ;
-    omv:description "Semantic query on Materials data"^^xsd:string ;
-    omv:modificationDate ""^^xsd:string ;
-    omv:name "MatOWL"^^xsd:string ;
-    omv:resourceLocator ""^^xsd:string .
-
-pmd_kg:mdo a omv:Ontology ;
-    omv:description "Materials design"^^xsd:string ;
-    omv:modificationDate "26-Jan-22"^^xsd:string ;
-    omv:name "Materials Design Ontology"^^xsd:string ;
-    omv:numClasses 37.0 ;
-    omv:numProperties 64.0 ;
-    omv:resourceLocator "https://github.com/LiUSemWeb/Materials-Design-Ontology "^^xsd:string ;
-    omv:useImports pmd_kg:,
-        pmd_kg:calculation,
-        pmd_kg:owl,
-        pmd_kg:provenance,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:structure,
-        pmd_kg:terms,
-        pmd_kg:vann,
-        pmd_kg:xml,
-        pmd_kg:xsd .
-
-pmd_kg:metadata a omv:Ontology .
-
-pmd_kg:miProtocol a omv:Ontology .
-
-pmd_kg:mid a omv:Ontology .
-
-pmd_kg:mmoy a omv:Ontology ;
-    omv:description "Metallic materials"^^xsd:string ;
-    omv:modificationDate ""^^xsd:string ;
-    omv:name "MMOY"^^xsd:string ;
-    omv:numClasses 2325.0 ;
-    omv:numProperties 9.0 ;
-    omv:resourceLocator ""^^xsd:string .
-
-pmd_kg:mseo a omv:Ontology ;
-    omv:description "Material Sience and Engineering"^^xsd:string ;
-    omv:modificationDate "11-Mar-22"^^xsd:string ;
-    omv:name "Material Science and Engineering Ontology"^^xsd:string ;
-    omv:numClasses 1691.0 ;
-    omv:numProperties 317.0 ;
-    omv:resourceLocator "https://github.com/Mat-O-Lab/MSEO"^^xsd:string ;
-    omv:useImports pmd_kg:,
-        pmd_kg:cco,
-        pmd_kg:geo,
-        pmd_kg:obo,
-        pmd_kg:owl,
-        pmd_kg:pte,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:xml,
-        pmd_kg:xsd .
-
-pmd_kg:ncbitaxon a omv:Ontology .
-
-pmd_kg:ncicp a omv:Ontology .
-
-pmd_kg:obda a omv:Ontology .
-
-pmd_kg:p-plan a omv:Ontology .
-
-pmd_kg:p1 a omv:Ontology .
-
-pmd_kg:p2 a omv:Ontology .
-
-pmd_kg:pato a omv:Ontology .
-
-pmd_kg:patterns a omv:Ontology .
-
-pmd_kg:pav a omv:Ontology .
-
-pmd_kg:periodictable a omv:Ontology ;
-    omv:description "Representation of the Periodic Table of the Elements"^^xsd:string ;
-    omv:modificationDate "5-Feb-04"^^xsd:string ;
-    omv:name "Periodic table ontology"^^xsd:string ;
-    omv:numClasses 7.0 ;
-    omv:numProperties 13.0 ;
-    omv:resourceLocator "http://www.daml.org/2003/01/periodictable/ "^^xsd:string ;
-    omv:useImports pmd_kg:,
-        pmd_kg:owl,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:xml,
-        pmd_kg:xsd .
-
-pmd_kg:pmdco a omv:Ontology ;
-    omv:description "Materials Science experiment"^^xsd:string ;
-    omv:modificationDate "16-Jul-21"^^xsd:string ;
-    omv:name "PMD Core Ontology"^^xsd:string ;
-    omv:numClasses 26.0 ;
-    omv:numProperties 66.0 ;
-    omv:resourceLocator "https://github.com/materialdigital/core-ontology "^^xsd:string ;
-    omv:useImports pmd_kg:,
-        pmd_kg:owl,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:xml,
-        pmd_kg:xsd .
-
-pmd_kg:prov a omv:Ontology .
-
-pmd_kg:provenance a omv:Ontology .
-
-pmd_kg:provo a omv:Ontology ;
-    omv:description "Represent and interchange provenance information"^^xsd:string ;
-    omv:modificationDate "30-Apr-13"^^xsd:string ;
-    omv:name "PROV Ontology"^^xsd:string ;
-    omv:numClasses 31.0 ;
-    omv:numProperties 50.0 ;
-    omv:resourceLocator "https://www.w3.org/TR/prov-o/ "^^xsd:string .
-
-pmd_kg:pte a omv:Ontology .
-
-pmd_kg:resource a omv:Ontology .
-
-pmd_kg:ro a omv:Ontology .
-
-pmd_kg:service a omv:Ontology .
-
-pmd_kg:sio a omv:Ontology .
-
-pmd_kg:skos_mdo a omv:Ontology ;
-    omv:description "Material science of records in the NIST Materials Resource Registry"^^xsd:string ;
-    omv:modificationDate "1-Nov-17"^^xsd:string ;
-    omv:name "Simple Knowledge Organization System (SKOS) version of Materials Data Vocabulary "^^xsd:string ;
-    omv:resourceLocator "https://data.nist.gov/od/ds/67C783D4BA814C8EE05324570681708A1899/NMRRVocab20210726.rdf "^^xsd:string ;
-    omv:useImports pmd_kg:dc,
-        pmd_kg:dct,
-        pmd_kg:map,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:skos,
-        pmd_kg:xlink,
-        pmd_kg:xml,
-        pmd_kg:xsd .
-
-pmd_kg:so a omv:Ontology ;
-    omv:description "Deneral concept definition of a service"^^xsd:string ;
-    omv:modificationDate "24-Nov-13"^^xsd:string ;
-    omv:name "Service Ontology"^^xsd:string ;
-    omv:numClasses 7.0 ;
-    omv:numProperties 8.0 ;
-    omv:resourceLocator "http://dini-ag-kim.github.io/service-ontology/service.ttl "^^xsd:string ;
-    omv:useImports pmd_kg:cc,
-        pmd_kg:dcterms,
-        pmd_kg:dctype,
-        pmd_kg:foaf,
-        pmd_kg:gr,
-        pmd_kg:owl,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:schema,
-        pmd_kg:service,
-        pmd_kg:vann,
-        pmd_kg:voaf,
-        pmd_kg:vs,
-        pmd_kg:xml,
-        pmd_kg:xsd .
-
-pmd_kg:sosa a omv:Ontology .
-
-pmd_kg:sp a omv:Ontology ;
-    omv:description "Experimental protocols"^^xsd:string ;
-    omv:modificationDate "3-Dec-14"^^xsd:string ;
-    omv:name "SMART-Protocols"^^xsd:string ;
-    omv:numClasses 86.0 ;
-    omv:numProperties 8.0 ;
-    omv:resourceLocator "https://github.com/oeg-upm/SMART-Protocols "^^xsd:string ;
-    omv:useImports pmd_kg:,
-        pmd_kg:MGEDOntology,
-        pmd_kg:SO,
-        pmd_kg:Thesaurus,
-        pmd_kg:bfo,
-        pmd_kg:miProtocol,
-        pmd_kg:npo,
-        pmd_kg:obo,
-        pmd_kg:owl,
-        pmd_kg:owl2xml,
-        pmd_kg:p-plan,
-        pmd_kg:p1,
-        pmd_kg:p2,
-        pmd_kg:protege,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:ro,
-        pmd_kg:snap,
-        pmd_kg:span,
-        pmd_kg:swrl,
-        pmd_kg:swrlb,
-        pmd_kg:terms,
-        pmd_kg:vann,
-        pmd_kg:xml,
-        pmd_kg:xsd,
-        pmd_kg:xsp .
-
-pmd_kg:ssn a omv:Ontology ;
-    omv:description "Describing sensors and their observations"^^xsd:string ;
-    omv:modificationDate "6-May-22"^^xsd:string ;
-    omv:name "Semantic Sensor Network Ontology"^^xsd:string ;
-    omv:numClasses 16.0 ;
-    omv:numProperties 23.0 ;
-    omv:resourceLocator "https://raw.githubusercontent.com/w3c/sdw/gh-pages/ssn/integrated/sosa.ttl "^^xsd:string ;
-    omv:useImports pmd_kg:dcterms,
-        pmd_kg:foaf,
-        pmd_kg:owl,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:schema,
-        pmd_kg:skos,
-        pmd_kg:sosa,
-        pmd_kg:time,
-        pmd_kg:vann,
-        pmd_kg:voaf,
-        pmd_kg:xml,
-        pmd_kg:xsd .
-
-pmd_kg:structure a omv:Ontology .
-
-pmd_kg:subsets a omv:Ontology .
-
-pmd_kg:term a omv:Ontology .
-
-pmd_kg:time a omv:Ontology .
-
-pmd_kg:tnds a omv:Ontology .
-
-pmd_kg:uberon a omv:Ontology .
-
-pmd_kg:uo a omv:Ontology .
-
-pmd_kg:wot a omv:Ontology .
-
-pmd_kg:xlink a omv:Ontology .
-
-pmd_kg:Thesaurus a omv:Ontology .
-
-pmd_kg:bibo a omv:Ontology .
-
-pmd_kg:cc a omv:Ontology .
-
-pmd_kg:cco a omv:Ontology ;
-    omv:description "Comprise twelve ontologies that contain classes and relations that are used in many domains of interest."^^xsd:string ;
+oekg:amontology a omv:Ontology ;
+    oekg:branch "master"^^xsd:string ;
+    oekg:branchCount 1 ;
+    oekg:closedIssues 1 ;
+    oekg:description "NIST's OWL ontology of  additive manufacturing"^^xsd:string ;
+    oekg:forks 2 ;
+    oekg:language "Web Ontology Language"^^xsd:string ;
+    oekg:lastUpdate "2024-05-02T13:18:03+00:00"^^xsd:dateTime ;
+    oekg:openIssues 4 ;
+    oekg:owner "iassouroko"^^xsd:string ;
+    oekg:stars 8 ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Additive Manufacturing"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate "15-April-2021"^^xsd:string ;
+    omv:name "Additive Manufacturing Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "knowledge about additive manufacturing processes"^^xsd:string ;
+    omv:resourceLocator "https://github.com/iassouroko/AMontology"^^xsd:anyURI ;
+    omv:usedInProject "NIST's Systems Integration  for Additive Manufacturing project"^^xsd:string .
+
+oekg:asmo a omv:Ontology ;
+    oekg:branch "8-asmo-term-additions-needed"^^xsd:string,
+        "main"^^xsd:string ;
+    oekg:branchCount 2 ;
+    oekg:closedIssues 6 ;
+    oekg:description "ASMO - Atomistic Simulation Methods Ontology"^^xsd:string ;
+    oekg:forks 0 ;
+    oekg:language "None"^^xsd:string ;
+    oekg:lastUpdate "2024-09-21T18:56:42+00:00"^^xsd:dateTime ;
+    oekg:openIssues 6 ;
+    oekg:owner "OCDO"^^xsd:string ;
+    oekg:stars 2 ;
+    omv:commonFactors "reusing PROVO, MDO"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Computational Materials Science"^^xsd:string ;
+    omv:license "CC BY 4.0"^^xsd:string ;
+    omv:modificationDate "May 8, 2024"^^xsd:string ;
+    omv:name "Atomistic Simulation Methods Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "describe commonly used atomic scale simulation methods"^^xsd:string ;
+    omv:resourceLocator "https://github.com/OCDO/asmo"^^xsd:anyURI ;
+    omv:usedInProject "NFDI-MatWerk"^^xsd:string .
+
+oekg:bmo a omv:Ontology ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Materials Science"^^xsd:string ;
+    omv:license "CC BY 4.0"^^xsd:string ;
+    omv:modificationDate "15-April-2021"^^xsd:string ;
+    omv:name "Building Material Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "defines the main concepts of building material, types, layers, and properties"^^xsd:string ;
+    omv:resourceLocator "https://matportal.org/ontologies/BUILDMAT"^^xsd:anyURI ;
+    omv:usedInProject "Linked data and Ontologies for Semantic Interoperability, BIM4EEB"^^xsd:string .
+
+oekg:bwmd-domain a omv:Ontology ;
+    omv:commonFactors "The separated ontology modules help to easily reuse the corresponding concepts of the BWMD ontology"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Materials Science"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate "11-Oct-2022"^^xsd:string ;
+    omv:name "Baden Württemberg Material Digital Domain Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "implementing a process chain"^^xsd:string ;
+    omv:resourceLocator "https://gitlab.cc-asp.fraunhofer.de/EMI_datamanagement/bwmd_ontology"^^xsd:anyURI ;
+    omv:structuralDifferences "based on the upper ontology BFO"^^xsd:string ;
+    omv:useCases "Unknown"^^xsd:string ;
+    omv:usedInProject "Materials Open Laboratory, AluTrace, DMD4Future, KMU-akut: ADAM"^^xsd:string .
+
+oekg:bwmd-mid a omv:Ontology ;
+    omv:commonFactors "The separated ontology modules help to easily reuse the corresponding concepts of the BWMD ontology"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Materials Science"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate "11-Oct-2022"^^xsd:string ;
+    omv:name "Baden Württemberg Material Digital Domain Mid Level Ontology"^^xsd:string ;
+    omv:ontologyCategory "mid-level"^^xsd:string ;
+    omv:purpose "implementing a process chain"^^xsd:string ;
+    omv:resourceLocator "https://gitlab.cc-asp.fraunhofer.de/EMI_datamanagement/bwmd_ontology"^^xsd:anyURI ;
+    omv:structuralDifferences "based on the upper ontology BFO"^^xsd:string ;
+    omv:useCases "Unknown"^^xsd:string ;
+    omv:usedInProject "Materials Open Laboratory, AluTrace, DMD4Future, KMU-akut: ADAM"^^xsd:string .
+
+oekg:cco a omv:Ontology ;
+    oekg:branch "#528-and-#527---language-support-and-dbpedia-mapping"^^xsd:string,
+        "186-discrepancy-between-definition-and-axioms-for-agent-class"^^xsd:string,
+        "224-make-ccoacronym-a-sub-property-of-skosaltlabel"^^xsd:string,
+        "257-improve-definition-sources"^^xsd:string,
+        "306-add-term-for-dbi"^^xsd:string,
+        "312-definition-of-spherical-too-broad"^^xsd:string,
+        "471-several-modules-are-missing-dcterms-prefix-declarations"^^xsd:string,
+        "IEO-fixes"^^xsd:string,
+        "cameronmore-164-class-hierarchy-for-change-of-specifically-dependent-continuant"^^xsd:string,
+        "describesconfusing"^^xsd:string,
+        "develop"^^xsd:string,
+        "fix-sparql-prefix-error"^^xsd:string,
+        "ice-iba-refactor"^^xsd:string,
+        "markj-testing"^^xsd:string,
+        "master"^^xsd:string,
+        "new-iri-v2"^^xsd:string,
+        "numeric-iris"^^xsd:string,
+        "old-master"^^xsd:string,
+        "patchfixes042823"^^xsd:string,
+        "patchfixes06262023"^^xsd:string,
+        "qudt"^^xsd:string,
+        "rename-annotation-props"^^xsd:string,
+        "stasis-change"^^xsd:string ;
+    oekg:branchCount 23 ;
+    oekg:closedIssues 27 ;
+    oekg:description "The Common Core Ontology Repository holds the current released version of the Common Core Ontology suite. "^^xsd:string ;
+    oekg:forks 55 ;
+    oekg:language "Makefile"^^xsd:string ;
+    oekg:lastUpdate "2024-11-04T03:46:48+00:00"^^xsd:dateTime ;
+    oekg:openIssues 3 ;
+    oekg:owner "CommonCoreOntology"^^xsd:string ;
+    oekg:stars 191 ;
+    omv:commonFactors """adopts a modular approach to ontology development, according to which different\r
+ontologies are responsible for representing reality at different levels of granularity or in different\r
+domains"""^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain ""^^xsd:string ;
+    omv:license "CC BY 3.0"^^xsd:string ;
     omv:modificationDate "15-Mar-22"^^xsd:string ;
     omv:name "Common Core Ontology"^^xsd:string ;
-    omv:numClasses 1430.0 ;
-    omv:numProperties 270.0 ;
-    omv:resourceLocator ""^^xsd:string ;
-    omv:useImports pmd_kg:,
-        pmd_kg:CommonCoreOntologies,
-        pmd_kg:dc,
-        pmd_kg:foaf,
-        pmd_kg:metadata,
-        pmd_kg:obo,
-        pmd_kg:obo1,
-        pmd_kg:oboInOwl,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:terms,
-        pmd_kg:xml,
-        pmd_kg:xsd .
+    omv:ontologyCategory "middle-level"^^xsd:string ;
+    omv:purpose "represent the most generic categories of entity and the most generic types of relations that hold between them, by defining a small number of classes and relations"^^xsd:string ;
+    omv:reference "https://www.nist.gov/system/files/documents/2021/10/14/nist-ai-rfi-cubrc_inc_004.pdf "^^xsd:string ;
+    omv:resourceLocator "https://github.com/CommonCoreOntology/CommonCoreOntologies"^^xsd:anyURI ;
+    omv:usedInProject "KupferDigital, ODE_AM, DiStAl, LeBeDigital, Materials Open Laboratory, JIDO, CERDEC I2WD, ARL, AFRL Wright Patterson, AFRL Rome, OSD"^^xsd:string .
 
-pmd_kg:core a omv:Ontology .
+oekg:cdco a omv:Ontology ;
+    oekg:branch "main"^^xsd:string ;
+    oekg:branchCount 1 ;
+    oekg:closedIssues 0 ;
+    oekg:description "CDCO - Crystallographic Defect Core Ontology"^^xsd:string ;
+    oekg:forks 0 ;
+    oekg:language "None"^^xsd:string ;
+    oekg:lastUpdate "2024-02-02T11:05:29+00:00"^^xsd:dateTime ;
+    oekg:openIssues 3 ;
+    oekg:owner "OCDO"^^xsd:string ;
+    oekg:stars 0 ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Materials Characterization"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate "April 12, 2024"^^xsd:string ;
+    omv:name "Crystallographic Defect Core Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "description of defects in crystalline materials"^^xsd:string ;
+    omv:resourceLocator "https://github.com/OCDO/cdco"^^xsd:anyURI .
 
-pmd_kg:gpo a omv:Ontology ;
-    omv:description "Model processes"^^xsd:string ;
-    omv:modificationDate "19-May-22"^^xsd:string ;
-    omv:name "EMMO General Process Ontology"^^xsd:string ;
-    omv:numClasses 170.0 ;
-    omv:numProperties 24.0 ;
-    omv:resourceLocator "https://github.com/General-Process-Ontology/ontology "^^xsd:string ;
-    omv:useImports pmd_kg:,
-        pmd_kg:owl,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:xml,
-        pmd_kg:xsd .
+oekg:chameo a omv:Ontology ;
+    oekg:branch "1.0.0-alpha1"^^xsd:string,
+        "1.0.0-alpha2"^^xsd:string,
+        "1.0.0-beta1"^^xsd:string,
+        "1.0.0-beta2"^^xsd:string,
+        "1.0.0-beta3"^^xsd:string,
+        "add_techniques"^^xsd:string,
+        "characterisation-procedure"^^xsd:string,
+        "characterisation-property"^^xsd:string,
+        "electrochemical-methods"^^xsd:string,
+        "feature-add-techniques"^^xsd:string,
+        "fix-inconsistencies"^^xsd:string,
+        "fix-process"^^xsd:string,
+        "main"^^xsd:string,
+        "version-update-emmo-1.0.0-beta7"^^xsd:string ;
+    oekg:branchCount 14 ;
+    oekg:closedIssues 15 ;
+    oekg:description "Characterisation Methodology Domain Ontology (CHAMEO)"^^xsd:string ;
+    oekg:forks 1 ;
+    oekg:language "None"^^xsd:string ;
+    oekg:lastUpdate "2024-10-31T10:42:13+00:00"^^xsd:dateTime ;
+    oekg:openIssues 3 ;
+    oekg:owner "emmo-repo"^^xsd:string ;
+    oekg:stars 5 ;
+    omv:citations "2, https://scholar.google.de/scholar?cites=3640455213952315933&as_sdt=2005&sciodt=0,5&hl=en"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Materials Characterization"^^xsd:string ;
+    omv:license "CC BY 4.0"^^xsd:string ;
+    omv:modificationDate "09-Nov-2022"^^xsd:string ;
+    omv:name "Characterisation Methodology Domain Ontology (CHAMEO)"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "model the common aspects across the different characterisation methodologies"^^xsd:string ;
+    omv:reference "https://content.iospress.com/articles/applied-ontology/ao220271"^^xsd:string ;
+    omv:resourceLocator "https://github.com/emmo-repo/domain-characterisation-methodology"^^xsd:anyURI ;
+    omv:usedInProject "NanoMECommons, OYSTER, Big-Map, OntoTran"^^xsd:string .
 
-pmd_kg:mambo a omv:Ontology ;
-    omv:description "Molecular materials"^^xsd:string ;
-    omv:modificationDate "22-Jun-22"^^xsd:string ;
-    omv:name "Materials And Molecules Basic Ontology"^^xsd:string ;
-    omv:numClasses 24.0 ;
-    omv:numProperties 45.0 ;
-    omv:resourceLocator "https://github.com/daimoners/MAMBO "^^xsd:string ;
-    omv:useImports pmd_kg:,
-        pmd_kg:mambo,
-        pmd_kg:owl,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:xml,
-        pmd_kg:xsd .
-
-pmd_kg:metal-alloy a omv:Ontology ;
-    omv:description "Materials representation"^^xsd:string ;
+oekg:chebi a omv:Ontology ;
+    omv:citations "1168, https://scholar.google.de/scholar?cites=12539491029958784035&as_sdt=2005&sciodt=0,5&hl=en"^^xsd:string ;
+    omv:commonFactors "BFO & OBO based"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Chemistry"^^xsd:string ;
+    omv:license "CC-BY 4.0"^^xsd:string ;
     omv:modificationDate ""^^xsd:string ;
-    omv:name "metal-alloy"^^xsd:string ;
-    omv:numClasses 16.0 ;
-    omv:numProperties 30.0 ;
-    omv:resourceLocator "https://emmc.info/taxonda/metal-alloy/ "^^xsd:string ;
-    omv:useImports pmd_kg:,
-        pmd_kg:emmo-core,
-        pmd_kg:emmo-properties,
-        pmd_kg:metal-alloy,
-        pmd_kg:owl,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:xml,
-        pmd_kg:xsd .
+    omv:name "Chemical Entities of Biological Interest"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose ""^^xsd:string ;
+    omv:reference "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2238832/"^^xsd:string ;
+    omv:resourceLocator "https://ftp.ebi.ac.uk/pub/databases/chebi/ontology/"^^xsd:anyURI ;
+    omv:usedInProject "An Ontology for Drug Discovery Investigations, Beta Cell Genomics database, Cellosaurus, Children's Health Exposure Analysis Resource, Electrophysiology Ontology, eNanoMapper, Epidemic Marketplace, eTOX, ISA software suite, MASYMOS, MeRy-B, Neuroscience Information Framework, Open PHACTS, PubChem, SemGen, The MACiE Database, a database of enzyme reaction mechanisms, The Structure Function Linkage Database, Virtual Imaging Platform project"^^xsd:string .
 
-pmd_kg:nanomine a omv:Ontology ;
-    omv:description "Polymer nanocomposites"^^xsd:string ;
+oekg:cheminf a omv:Ontology ;
+    oekg:branch "master"^^xsd:string,
+        "update/bfo2"^^xsd:string,
+        "wiki"^^xsd:string ;
+    oekg:branchCount 3 ;
+    oekg:closedIssues 21 ;
+    oekg:description "Automatically exported from code.google.com/p/semanticchemistry"^^xsd:string ;
+    oekg:forks 1 ;
+    oekg:language "Java"^^xsd:string ;
+    oekg:lastUpdate "2024-10-07T08:34:36+00:00"^^xsd:dateTime ;
+    oekg:openIssues 0 ;
+    oekg:owner "egonw"^^xsd:string ;
+    oekg:stars 11 ;
+    omv:commonFactors "BFO"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Chemistry"^^xsd:string ;
+    omv:license "CC BY 3.0"^^xsd:string ;
+    omv:modificationDate "April 10, 2024"^^xsd:string ;
+    omv:name "Chemical Information Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "terms for the descriptors commonly used in cheminformatics software applications and the algorithms which generate them"^^xsd:string ;
+    omv:resourceLocator "https://github.com/egonw/semanticchemistry"^^xsd:anyURI .
+
+oekg:chmo a omv:Ontology ;
+    oekg:branch "master"^^xsd:string,
+        "wiki"^^xsd:string ;
+    oekg:branchCount 2 ;
+    oekg:closedIssues 18 ;
+    oekg:description "Chemical Methods Ontology"^^xsd:string ;
+    oekg:forks 7 ;
+    oekg:language "None"^^xsd:string ;
+    oekg:lastUpdate "2023-10-10T06:26:21+00:00"^^xsd:dateTime ;
+    oekg:openIssues 11 ;
+    oekg:owner "rsc-ontologies"^^xsd:string ;
+    oekg:stars 12 ;
+    omv:commonFactors "BFO"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Materials Characterization"^^xsd:string ;
+    omv:license "CC BY 4.0"^^xsd:string ;
+    omv:modificationDate "Dec 14, 2023"^^xsd:string ;
+    omv:name "Chemical Methods Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "describes methods used to collect data in chemical experiments, such as mass spectrometry and electron microscopy prepare and separate material for further analysis, such as sample ionisation, chromatography, and electrophoresis synthesise materials, such as epitaxy and continuous vapour deposition It also describes the instruments used in these experiments, such as mass spectrometers and chromatography columns."^^xsd:string ;
+    omv:resourceLocator "https://github.com/rsc-ontologies/rsc-cmo"^^xsd:anyURI .
+
+oekg:cif-core a omv:Ontology ;
+    oekg:branch "add-cif_core"^^xsd:string,
+        "added-annotations2"^^xsd:string,
+        "automate_gh-pages"^^xsd:string,
+        "ci/dependabot-updates"^^xsd:string,
+        "ci/update-dependencies"^^xsd:string,
+        "cif-data"^^xsd:string,
+        "cwa/update-cif_core.ttl"^^xsd:string,
+        "dependabot/github_actions/ci/dependabot-updates/peter-evans/create-pull-request-6"^^xsd:string,
+        "dependabot/pip/ci/dependabot-updates/pre-commit-approx-eq-3.6"^^xsd:string,
+        "dependabot/pip/ci/dependabot-updates/pylint-approx-eq-3.1"^^xsd:string,
+        "dependabot/pip/ci/dependabot-updates/pytest-approx-eq-8.1"^^xsd:string,
+        "dev_emmo1.0.0-beta"^^xsd:string,
+        "gh-pages"^^xsd:string,
+        "lattice-vector-components"^^xsd:string,
+        "main"^^xsd:string,
+        "ordered-positions"^^xsd:string ;
+    oekg:branchCount 16 ;
+    oekg:closedIssues 17 ;
+    oekg:description "Basic crystallography domain ontology based on EMMO and the CIF core dictionary."^^xsd:string ;
+    oekg:forks 4 ;
+    oekg:language "Python"^^xsd:string ;
+    oekg:lastUpdate "2024-05-13T15:49:55+00:00"^^xsd:dateTime ;
+    oekg:openIssues 13 ;
+    oekg:owner "emmo-repo"^^xsd:string ;
+    oekg:stars 9 ;
+    omv:commonFactors "core concepts in crystallography"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Crystallography"^^xsd:string ;
+    omv:license "CC BY 4.0"^^xsd:string ;
+    omv:modificationDate "21-Dec-22"^^xsd:string ;
+    omv:name "CIF Core Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "describe crystallography"^^xsd:string ;
+    omv:resourceLocator "https://github.com/emmo-repo/CIF-ontology"^^xsd:anyURI ;
+    omv:usedInProject "Demystify ontologies, OntoTrans, MarketPlace, BIG-MAP"^^xsd:string .
+
+oekg:cmso a omv:Ontology ;
+    oekg:branch "main"^^xsd:string ;
+    oekg:branchCount 1 ;
+    oekg:closedIssues 9 ;
+    oekg:description "CMSO - Computational Material Sample Ontology"^^xsd:string ;
+    oekg:forks 1 ;
+    oekg:language "None"^^xsd:string ;
+    oekg:lastUpdate "2024-10-28T18:41:45+00:00"^^xsd:dateTime ;
+    oekg:openIssues 4 ;
+    oekg:owner "OCDO"^^xsd:string ;
+    oekg:stars 6 ;
+    omv:competencyQuestion "https://github.com/Materials-Data-Science-and-Informatics/cmso-ontology/tree/main/requirements"^^xsd:string ;
+    omv:domain "Computational Materials Science"^^xsd:string ;
+    omv:license ""^^xsd:string ;
+    omv:modificationDate "26 Jan 2023"^^xsd:string ;
+    omv:name "Computational Material Sample Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "computational materials science samples (or structures), including crystalline defects"^^xsd:string ;
+    omv:resourceLocator "https://github.com/Materials-Data-Science-and-Informatics/cmso-ontology/tree/main"^^xsd:anyURI ;
+    omv:usedInProject "NFDI MatWerk"^^xsd:string .
+
+oekg:cso a omv:Ontology ;
+    oekg:branch "DISOS"^^xsd:string,
+        "main"^^xsd:string ;
+    oekg:branchCount 2 ;
+    oekg:closedIssues 4 ;
+    oekg:description "This repository is a home to the Dislocation Ontology Suite (DISOS), an ontology suite comprising several modules describing materials scientific concepts, representations of dislocations, and different simulation models in the dislocation domain."^^xsd:string ;
+    oekg:forks 1 ;
+    oekg:language "JavaScript"^^xsd:string ;
+    oekg:lastUpdate "2023-01-03T10:45:02+00:00"^^xsd:dateTime ;
+    oekg:openIssues 6 ;
+    oekg:owner "Materials-Data-Science-and-Informatics"^^xsd:string ;
+    oekg:stars 1 ;
+    omv:citations "8"^^xsd:string ;
+    omv:commonFactors "reusing MDO, QUDT, CHEBI, BFO"^^xsd:string ;
+    omv:competencyQuestion "https://github.com/Materials-Data-Science-and-Informatics/Dislocation-Ontology-Suite/blob/main/CSO/CQs.md"^^xsd:string ;
+    omv:domain "Materials Characterization"^^xsd:string ;
+    omv:license "CC BY 3.0"^^xsd:string ;
+    omv:modificationDate "Aug 15, 2023"^^xsd:string ;
+    omv:name "Crystal Structure Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "represent crystallographic information needed to describe the dislocation"^^xsd:string ;
+    omv:reference "https://arxiv.org/abs/2106.15136"^^xsd:string ;
+    omv:resourceLocator "https://github.com/Materials-Data-Science-and-Informatics/Dislocation-Ontology-Suite/tree/main/CSO"^^xsd:anyURI ;
+    omv:usedInProject "MuDiLingo, Helmholtz Metadata Collaboration (HMC)"^^xsd:string .
+
+oekg:deb a omv:Ontology ;
+    oekg:branch "add-license-1"^^xsd:string,
+        "master"^^xsd:string ;
+    oekg:branchCount 2 ;
+    oekg:closedIssues 3 ;
+    oekg:description "The Device, Experimental scaffolds and medical Device ontology (DEB)"^^xsd:string ;
+    oekg:forks 1 ;
+    oekg:language "None"^^xsd:string ;
+    oekg:lastUpdate "2021-12-13T14:46:01+00:00"^^xsd:dateTime ;
+    oekg:openIssues 0 ;
+    oekg:owner "ProjectDebbie"^^xsd:string ;
+    oekg:stars 3 ;
+    omv:citations "9, https://scholar.google.de/scholar?cites=12353694602050964569&as_sdt=2005&sciodt=0,5&hl=de"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Medical Eevices, Biomaterials"^^xsd:string ;
+    omv:license "GPL-3.0 license "^^xsd:string ;
+    omv:modificationDate "2-Jun-21"^^xsd:string ;
+    omv:name "The Devices, Experimental scaffolds and Biomaterials Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "organizing information about biomaterials, their design, manufacture, and biological testing"^^xsd:string ;
+    omv:reference "https://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.201909910 "^^xsd:string ;
+    omv:resourceLocator "https://github.com/ProjectDebbie/Ontology_DEB "^^xsd:anyURI ;
+    omv:usedInProject "Database of Experimental Biomaterials and their Biological Effect"^^xsd:string .
+
+oekg:diso a omv:Ontology ;
+    oekg:branch "feature/add-nickel-microstructure-data"^^xsd:string,
+        "feature/new-classes-april"^^xsd:string,
+        "feature/ontology-header-metadata"^^xsd:string,
+        "master"^^xsd:string ;
+    oekg:branchCount 4 ;
+    oekg:closedIssues 28 ;
+    oekg:description "Dislocation Ontology Repository"^^xsd:string ;
+    oekg:forks 1 ;
+    oekg:language "Python"^^xsd:string ;
+    oekg:lastUpdate "2023-08-15T10:32:54+00:00"^^xsd:dateTime ;
+    oekg:openIssues 0 ;
+    oekg:owner "Materials-Data-Science-and-Informatics"^^xsd:string ;
+    oekg:stars 2 ;
+    omv:citations "2, https://scholar.google.de/scholar?cites=12103827609271321048&as_sdt=2005&sciodt=0,5&hl=de"^^xsd:string ;
+    omv:commonFactors "reusing existing  ontologies,  e.g.,  MDO,  EMMO,  and  QUDT"^^xsd:string ;
+    omv:competencyQuestion "https://github.com/Materials-Data-Science-and-Informatics/dislocation-ontology/blob/master/CQs/CQs.md"^^xsd:string ;
+    omv:domain "Materials Characterization"^^xsd:string ;
+    omv:license "MIT License"^^xsd:string ;
+    omv:modificationDate "2-Jun-22"^^xsd:string ;
+    omv:name "Dislocation Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:overlaps "MDO"^^xsd:string ;
+    omv:purpose "defines the linear defect, in particular dislocation concepts and relations between them in crystalline materials"^^xsd:string ;
+    omv:reference "https://arxiv.org/abs/2106.15136 "^^xsd:string ;
+    omv:resourceLocator "https://github.com/Materials-Data-Science-and-Informatics/dislocation-ontology "^^xsd:anyURI ;
+    omv:usedInProject "MuDiLingo, Helmholtz Metadata Collaboration (HMC)"^^xsd:string .
+
+oekg:dolce a omv:Ontology ;
+    omv:citations "1646, https://scholar.google.de/scholar?cites=10257730654378951941&as_sdt=2005&sciodt=0,5&hl=en"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain ""^^xsd:string ;
+    omv:license "GNU Public License"^^xsd:string ;
     omv:modificationDate ""^^xsd:string ;
-    omv:name "NanoMine"^^xsd:string ;
-    omv:numClasses 1730.0 ;
-    omv:numProperties 215.0 ;
-    omv:resourceLocator "https://github.com/tetherless-world/nanomine-ontology "^^xsd:string ;
-    omv:useImports pmd_kg:,
-        pmd_kg:bibo,
-        pmd_kg:chear,
-        pmd_kg:cmo,
-        pmd_kg:dc,
-        pmd_kg:dcterms,
-        pmd_kg:nanomine,
-        pmd_kg:owl,
-        pmd_kg:prov,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:sio,
-        pmd_kg:skos,
-        pmd_kg:xml,
-        pmd_kg:xsd .
+    omv:name """Descriptive Ontology for Linguistic and Cog-\r
+nitive Engineering"""^^xsd:string ;
+    omv:ontologyCategory "top-level"^^xsd:string ;
+    omv:purpose ""^^xsd:string ;
+    omv:reference "https://doi.org/10.1007/3-540-45810-7_18"^^xsd:string ;
+    omv:resourceLocator "http://www.loa.istc.cnr.it/dolce/overview.html"^^xsd:anyURI .
 
-pmd_kg:obo1 a omv:Ontology .
+oekg:dsim a omv:Ontology ;
+    oekg:branch "main"^^xsd:string ;
+    oekg:branchCount 1 ;
+    oekg:closedIssues 0 ;
+    oekg:description "None"^^xsd:string ;
+    oekg:forks 0 ;
+    oekg:language "None"^^xsd:string ;
+    oekg:lastUpdate "2024-03-28T15:19:54+00:00"^^xsd:dateTime ;
+    oekg:openIssues 0 ;
+    oekg:owner "OCDO"^^xsd:string ;
+    oekg:stars 0 ;
+    omv:commonFactors "reusing PROVO, MDO, QUDT, CSO, DISO"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Computational Materials Science"^^xsd:string ;
+    omv:license "CC BY 3.0"^^xsd:string ;
+    omv:modificationDate "Mar 28, 2024"^^xsd:string ;
+    omv:name "Dislocation Simulation and Model Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "model various concepts and relationships in the discrete dislocation dynamics domain and microscopy techniques used in the dislocation domain"^^xsd:string ;
+    omv:resourceLocator "https://github.com/OCDO/DSIM"^^xsd:anyURI ;
+    omv:usedInProject "NFDI-MatWerk"^^xsd:string .
 
-pmd_kg:oboInOwl a omv:Ontology .
+oekg:elssi-emd a omv:Ontology ;
+    omv:citations "0, https://scholar.google.de/scholar?cluster=1797074368769868629&hl=en&as_sdt=0,5"^^xsd:string ;
+    omv:commonFactors "based on ISO 10303, ISO 18629, ISO 15926"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Material Data"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate ""^^xsd:string ;
+    omv:name "ELSSI-EMD ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose ""^^xsd:string ;
+    omv:reference "https://www.sciencedirect.com/topics/computer-science/data-ontology "^^xsd:string ;
+    omv:resourceLocator ""^^xsd:anyURI ;
+    omv:structuralDifferences "modular"^^xsd:string ;
+    omv:useCases "tensile test data"^^xsd:string ;
+    omv:usedInProject "Unknown"^^xsd:string .
 
-pmd_kg:owl2xml a omv:Ontology .
-
-pmd_kg:schema a omv:Ontology .
-
-pmd_kg:snap a omv:Ontology .
-
-pmd_kg:span a omv:Ontology .
-
-pmd_kg:swrl a omv:Ontology .
-
-pmd_kg:swrlb a omv:Ontology .
-
-pmd_kg:tndv a omv:Ontology ;
-    omv:description "Materials, manufacturing and design"^^xsd:string ;
-    omv:modificationDate "15-Nov-17"^^xsd:string ;
-    omv:name "An Open Glossary for Materials, Manufacturing and Design"^^xsd:string ;
-    omv:resourceLocator "https://github.com/cpauloh/semmd/tree/master/skos "^^xsd:string ;
-    omv:useImports pmd_kg:cc,
-        pmd_kg:dc,
-        pmd_kg:dcterms,
-        pmd_kg:owl,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:skos,
-        pmd_kg:tnds,
-        pmd_kg:tndv,
-        pmd_kg:xml,
-        pmd_kg:xsd .
-
-pmd_kg:voaf a omv:Ontology .
-
-pmd_kg:vs a omv:Ontology .
-
-pmd_kg:annotations a omv:Ontology .
-
-pmd_kg:bfo a omv:Ontology ;
-    omv:description "Supporting information retrieval, analysis and integration in scientific and other domains"^^xsd:string ;
-    omv:modificationDate "16-Feb-22"^^xsd:string ;
-    omv:name "Basic Formal Ontology"^^xsd:string ;
-    omv:numClasses 36.0 ;
-    omv:numProperties 64.0 ;
-    omv:resourceLocator "https://github.com/BFO-ontology/BFO-2020 "^^xsd:string ;
-    omv:useImports pmd_kg:dc,
-        pmd_kg:obo,
-        pmd_kg:owl,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:skos,
-        pmd_kg:xml,
-        pmd_kg:xsd .
-
-pmd_kg:isq a omv:Ontology .
-
-pmd_kg:npo a omv:Ontology ;
-    omv:description "Cancer nanotechnology research"^^xsd:string ;
-    omv:modificationDate "24-Sep-13"^^xsd:string ;
-    omv:name "NanoParticle Ontology"^^xsd:string ;
-    omv:numClasses 1904.0 ;
-    omv:numProperties 81.0 ;
-    omv:resourceLocator "https://github.com/sobolevnrm/npo "^^xsd:string ;
-    omv:useImports pmd_kg:,
-        pmd_kg:CHEBI,
-        pmd_kg:FIX,
-        pmd_kg:GO,
-        pmd_kg:PATO,
-        pmd_kg:REX,
-        pmd_kg:UO,
-        pmd_kg:bfo,
-        pmd_kg:dc,
-        pmd_kg:ncicp,
-        pmd_kg:owl,
-        pmd_kg:owl2xml,
-        pmd_kg:protege,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:snap,
-        pmd_kg:span,
-        pmd_kg:swrl,
-        pmd_kg:swrlb,
-        pmd_kg:xml,
-        pmd_kg:xsd,
-        pmd_kg:xsp .
-
-pmd_kg:protege a omv:Ontology .
-
-pmd_kg:xsp a omv:Ontology .
-
-pmd_kg:foaf a omv:Ontology ;
-    omv:description "Describe people and social relationship on the Web"^^xsd:string ;
-    omv:modificationDate "27-Aug-17"^^xsd:string ;
-    omv:name "Friend Of A Friend ontology"^^xsd:string ;
-    omv:numClasses 19.0 ;
-    omv:numProperties 71.0 ;
-    omv:resourceLocator "https://raw.githubusercontent.com/ESIPFed/toolmatch-ontology/master/v3/foaf.owl "^^xsd:string ;
-    omv:useImports pmd_kg:,
-        pmd_kg:dc,
-        pmd_kg:owl,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:vs,
-        pmd_kg:wot,
-        pmd_kg:xml,
-        pmd_kg:xsd .
-
-pmd_kg:obo a omv:Ontology .
-
-pmd_kg:vann a omv:Ontology .
-
-pmd_kg:emmo a omv:Ontology ;
-    omv:description "A multidisciplinary ontology for applied sciences"^^xsd:string ;
+oekg:emmo a omv:Ontology ;
+    oekg:branch "1.0.0-alpha"^^xsd:string,
+        "1.0.0-alpha2"^^xsd:string,
+        "1.0.0-beta"^^xsd:string,
+        "1.0.0-beta2"^^xsd:string,
+        "1.0.0-beta3"^^xsd:string,
+        "1.0.0-beta4"^^xsd:string,
+        "1.0.0-beta5"^^xsd:string,
+        "1.0.0-beta6"^^xsd:string,
+        "1.0.0-beta7"^^xsd:string,
+        "1.0.0-beta7-dataset"^^xsd:string,
+        "1.0.0-beta7-dev"^^xsd:string,
+        "1.0.0-rc1"^^xsd:string,
+        "1.0.0-rc1-nodisjointunion"^^xsd:string,
+        "1.0.0-rc2"^^xsd:string,
+        "1.0.0-rc3"^^xsd:string,
+        "270-complex-numbers"^^xsd:string,
+        "274-add-chemical-identifiers"^^xsd:string,
+        "286-fairify"^^xsd:string,
+        "BohrMagneton"^^xsd:string,
+        "ConformityAssessment"^^xsd:string,
+        "DT-NMBP-09"^^xsd:string,
+        "EMMO-RL"^^xsd:string,
+        "add-quantity-properties"^^xsd:string,
+        "add-square-metre"^^xsd:string,
+        "added-probability"^^xsd:string,
+        "annotations"^^xsd:string,
+        "atom-has-property-velocity"^^xsd:string,
+        "atom-symbol-elucidations"^^xsd:string,
+        "battinfo-emmo-1.0.0-beta4"^^xsd:string,
+        "cd_update_pages"^^xsd:string ;
+    oekg:branchCount 30 ;
+    oekg:closedIssues 18 ;
+    oekg:description "Elementary Multiperspective Material Ontology (EMMO)"^^xsd:string ;
+    oekg:forks 17 ;
+    oekg:language "Python"^^xsd:string ;
+    oekg:lastUpdate "2024-10-12T17:10:50+00:00"^^xsd:dateTime ;
+    oekg:openIssues 12 ;
+    oekg:owner "emmo-repo"^^xsd:string ;
+    oekg:stars 65 ;
+    omv:commonFactors """multidisciplinary, good documentation, \r
+use of EMMO in domain ontologies"""^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "A multidisciplinary ontology for applied sciences"^^xsd:string ;
+    omv:license "CC BY 4.0"^^xsd:string ;
     omv:modificationDate "29-May-22"^^xsd:string ;
     omv:name "Elementary Multiperspective Material Ontology"^^xsd:string ;
-    omv:numClasses 463.0 ;
-    omv:numProperties 49.0 ;
-    omv:resourceLocator "https://github.com/emmo-repo/EMMO "^^xsd:string ;
-    omv:useImports pmd_kg:,
-        pmd_kg:dcterms,
-        pmd_kg:owl,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:skos,
-        pmd_kg:xml,
-        pmd_kg:xsd .
+    omv:ontologyCategory "top-level"^^xsd:string ;
+    omv:purpose "represet current materials modelling knowledge"^^xsd:string ;
+    omv:resourceLocator "https://github.com/emmo-repo/EMMO "^^xsd:anyURI ;
+    omv:specialProblem "connection between the physical world, materials characterisation world and materials modelling world"^^xsd:string ;
+    omv:structuralDifferences "modular"^^xsd:string ;
+    omv:useCases "Process, Battery , Crystallography, Mechanical Testing, Microstructure, Atomistic and Electronic Modelling"^^xsd:string ;
+    omv:usedInProject "EMMC-CSA, SimDOME , MarketPlace, VIMMP,  OntoTrans, ReaxPro, OntoCommons, OYSTER, NanoMECommons ,OpenModel, Know-Now, iBain, KupferDigital, StahlDigital, SmaDi, DiProgMag, SensoTwin"^^xsd:string .
 
-pmd_kg:terms a omv:Ontology .
+oekg:emmo_atomistic a omv:Ontology ;
+    oekg:branch "correct-hamiltonian"^^xsd:string,
+        "emmocheck_conf"^^xsd:string,
+        "extending-atomistic"^^xsd:string,
+        "master"^^xsd:string,
+        "update-to-emmo-1.0.0-alpha2"^^xsd:string,
+        "update-to-emmo-1.0.0-beta"^^xsd:string ;
+    oekg:branchCount 6 ;
+    oekg:closedIssues 8 ;
+    oekg:description "Domain ontology for atomistic and electronic modelling"^^xsd:string ;
+    oekg:forks 2 ;
+    oekg:language "Python"^^xsd:string ;
+    oekg:lastUpdate "2024-09-25T08:47:51+00:00"^^xsd:dateTime ;
+    oekg:openIssues 3 ;
+    oekg:owner "emmo-repo"^^xsd:string ;
+    oekg:stars 2 ;
+    omv:commonFactors "Based on EMMO"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Computational Materials Science"^^xsd:string ;
+    omv:license "CC BY 4.0"^^xsd:string ;
+    omv:modificationDate "7-May-21"^^xsd:string ;
+    omv:name "EMMO Atomistic and Electronic Modelling"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "atomistic and electronic modelling"^^xsd:string ;
+    omv:resourceLocator "https://github.com/emmo-repo/domain-atomistic "^^xsd:anyURI ;
+    omv:usedInProject "MarketPlace"^^xsd:string .
 
-pmd_kg:dcterms a omv:Ontology .
+oekg:emmo_battinfo a omv:Ontology ;
+    oekg:branch "LabNotebookAppOntology"^^xsd:string,
+        "bvco-alignment"^^xsd:string,
+        "combinefiles"^^xsd:string,
+        "cwa/fix-docs-building"^^xsd:string,
+        "dependabot/github_actions/master/actions/setup-python-5"^^xsd:string,
+        "dependabot/pip/master/idna-3.9"^^xsd:string,
+        "dependabot/pip/master/markdown-3.7"^^xsd:string,
+        "dependabot/pip/master/packaging-24.1"^^xsd:string,
+        "dependabot/pip/master/urllib3-2.1.0"^^xsd:string,
+        "dependabot/pip/master/zipp-3.20.0"^^xsd:string,
+        "dev"^^xsd:string,
+        "dev_eibar_docs"^^xsd:string,
+        "emmo-1.0.0-beta3-simon"^^xsd:string,
+        "emmo-beta4-top"^^xsd:string,
+        "emmo_update"^^xsd:string,
+        "fix-typo-in-catalog-file"^^xsd:string,
+        "flb/drodling-211130"^^xsd:string,
+        "gh-pages"^^xsd:string,
+        "issue57-fix-reasoning-with-factpp"^^xsd:string,
+        "master"^^xsd:string,
+        "move-out-battery-electrochemistry"^^xsd:string,
+        "v1.0.0-alpha"^^xsd:string ;
+    oekg:branchCount 22 ;
+    oekg:closedIssues 23 ;
+    oekg:description "A Battery Interface Ontology based on EMMO"^^xsd:string ;
+    oekg:forks 9 ;
+    oekg:language "Jupyter Notebook"^^xsd:string ;
+    oekg:lastUpdate "2024-10-10T07:23:02+00:00"^^xsd:dateTime ;
+    oekg:openIssues 7 ;
+    oekg:owner "BIG-MAP"^^xsd:string ;
+    oekg:stars 37 ;
+    omv:commonFactors "based on EMMO"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Batteries"^^xsd:string ;
+    omv:license "CC BY 4.0"^^xsd:string ;
+    omv:modificationDate "9-Jun-22"^^xsd:string ;
+    omv:name "EMMO Battery Interface Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "formalize the current state of knowledge on battery interfaces to support the development of computational tools and the deployment of interoperable data in the BIG-MAP project and beyond"^^xsd:string ;
+    omv:resourceLocator "https://github.com/BIG-MAP/BattINFO "^^xsd:anyURI ;
+    omv:usedInProject "BIG-MAP"^^xsd:string .
 
-pmd_kg:dc a omv:Ontology ;
-    omv:description "Specification of all metadata terms "^^xsd:string ;
-    omv:modificationDate "20-Jan-20"^^xsd:string ;
-    omv:name "The Dublin Core"^^xsd:string ;
-    omv:numClasses 22.0 ;
-    omv:numProperties 55.0 ;
-    omv:resourceLocator "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/"^^xsd:string ;
-    omv:useImports pmd_kg:dcam,
-        pmd_kg:dcterms,
-        pmd_kg:owl,
-        pmd_kg:rdf,
-        pmd_kg:rdfs,
-        pmd_kg:skos,
-        pmd_kg:xml,
-        pmd_kg:xsd .
+oekg:emmo_bvc a omv:Ontology ;
+    oekg:branch "add-industrial-production-steps"^^xsd:string,
+        "battinfo-alignment"^^xsd:string,
+        "gh-pages"^^xsd:string,
+        "master"^^xsd:string ;
+    oekg:branchCount 4 ;
+    oekg:closedIssues 4 ;
+    oekg:description "None"^^xsd:string ;
+    oekg:forks 4 ;
+    oekg:language "None"^^xsd:string ;
+    oekg:lastUpdate "2024-06-13T09:16:16+00:00"^^xsd:dateTime ;
+    oekg:openIssues 1 ;
+    oekg:owner "Battery-Value-Chain-Ontology"^^xsd:string ;
+    oekg:stars 4 ;
+    omv:commonFactors "Based on EMMO and GPO"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Batteries"^^xsd:string ;
+    omv:license "CC BY 4.0"^^xsd:string ;
+    omv:modificationDate "27-Jun-22"^^xsd:string ;
+    omv:name "Battery Value Chain Ontology Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:overlaps "with BattINFO ontology"^^xsd:string ;
+    omv:purpose "higher-level process chains for material processing and manufacturing"^^xsd:string ;
+    omv:resourceLocator "https://github.com/Battery-Value-Chain-Ontology/ontology "^^xsd:anyURI ;
+    omv:usedInProject "eLi /eLi-PLUS, KiProBatt"^^xsd:string .
 
-pmd_kg:skos a omv:Ontology .
+oekg:emmo_crystallography a omv:Ontology ;
+    oekg:branch "add-refinement-concept"^^xsd:string,
+        "add-sample-concept"^^xsd:string,
+        "add-unit_cell-concept"^^xsd:string,
+        "master"^^xsd:string,
+        "update-ci-tests"^^xsd:string,
+        "updating-crystallography"^^xsd:string ;
+    oekg:branchCount 6 ;
+    oekg:closedIssues 7 ;
+    oekg:description "EMMO domain ontology to describe crystallography."^^xsd:string ;
+    oekg:forks 2 ;
+    oekg:language "None"^^xsd:string ;
+    oekg:lastUpdate "2024-05-13T15:49:30+00:00"^^xsd:dateTime ;
+    oekg:openIssues 14 ;
+    oekg:owner "emmo-repo"^^xsd:string ;
+    oekg:stars 4 ;
+    omv:commonFactors "based on EMMO and the CIF core dictionary"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Crystallography"^^xsd:string ;
+    omv:license "CC BY 4.0"^^xsd:string ;
+    omv:modificationDate "7-May-21"^^xsd:string ;
+    omv:name "EMMO Crystallography"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "describe crystallography"^^xsd:string ;
+    omv:resourceLocator "https://github.com/emmo-repo/domain-crystallography "^^xsd:anyURI ;
+    omv:usedInProject "Demystify ontologies, OntoTrans, MarketPlace, BIG-MAP"^^xsd:string .
 
-pmd_kg: a omv:Ontology .
+oekg:emmo_datamodel a omv:Ontology ;
+    oekg:branch "gh-pages"^^xsd:string,
+        "master"^^xsd:string,
+        "remove-identity"^^xsd:string ;
+    oekg:branchCount 3 ;
+    oekg:closedIssues 10 ;
+    oekg:description "Datamodel ontology"^^xsd:string ;
+    oekg:forks 0 ;
+    oekg:language "None"^^xsd:string ;
+    oekg:lastUpdate "2024-05-13T15:55:10+00:00"^^xsd:dateTime ;
+    oekg:openIssues 1 ;
+    oekg:owner "emmo-repo"^^xsd:string ;
+    oekg:stars 7 ;
+    omv:citations "3, https://scholar.google.de/scholar?cites=6827805620527048105&as_sdt=2005&sciodt=0,5&hl=en"^^xsd:string ;
+    omv:commonFactors "Based on EMMO, modular"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Ontology-Based Data Modelling"^^xsd:string ;
+    omv:license "CC BY 4.0"^^xsd:string ;
+    omv:modificationDate "14-May-22"^^xsd:string ;
+    omv:name "EMMO Datamodel ontology"^^xsd:string ;
+    omv:ontologyCategory "mid-level"^^xsd:string ;
+    omv:purpose "make application specific data semantic interoperabel"^^xsd:string ;
+    omv:reference "https://www.scipedia.com/public/Hagelien_et_al_2021a "^^xsd:string ;
+    omv:resourceLocator "https://github.com/emmo-repo/datamodel-ontology "^^xsd:anyURI ;
+    omv:useCases "interoperability framework using the ProMo simulation environment"^^xsd:string ;
+    omv:usedInProject "MarketPlace, OntoTrans, OpenModel, VIPCOAT"^^xsd:string .
 
-pmd_kg:owl a omv:Ontology .
+oekg:emmo_mappings a omv:Ontology ;
+    oekg:branch "master"^^xsd:string ;
+    oekg:branchCount 1 ;
+    oekg:closedIssues 0 ;
+    oekg:description "Ontology for mapping to domains and ontological concepts"^^xsd:string ;
+    oekg:forks 0 ;
+    oekg:language "None"^^xsd:string ;
+    oekg:lastUpdate "2022-04-24T13:20:41+00:00"^^xsd:dateTime ;
+    oekg:openIssues 0 ;
+    oekg:owner "emmo-repo"^^xsd:string ;
+    oekg:stars 2 ;
+    omv:commonFactors "Based on EMMO"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Mapping to domains and ontological concepts"^^xsd:string ;
+    omv:license "CC BY 4.0"^^xsd:string ;
+    omv:modificationDate "31-Oct-21"^^xsd:string ;
+    omv:name "EMMO Mappings ontology"^^xsd:string ;
+    omv:ontologyCategory "mid-level"^^xsd:string ;
+    omv:purpose "maps domains with workflows, applications, experts etc and enable discoverability"^^xsd:string ;
+    omv:resourceLocator "https://github.com/emmo-repo/domain-mappings "^^xsd:anyURI ;
+    omv:usedInProject "MarketPlace, OntoTrans, OpenModel"^^xsd:string .
 
-pmd_kg:rdf a omv:Ontology .
+oekg:emmo_mechanical_testing a omv:Ontology ;
+    oekg:branch "ahashibon-draft-1"^^xsd:string,
+        "initial_move"^^xsd:string,
+        "master"^^xsd:string,
+        "modularization"^^xsd:string,
+        "move-to-emmo-alpha2"^^xsd:string,
+        "update-modularization"^^xsd:string ;
+    oekg:branchCount 6 ;
+    oekg:closedIssues 28 ;
+    oekg:description "A domain ontology for mechanical testing."^^xsd:string ;
+    oekg:forks 4 ;
+    oekg:language "None"^^xsd:string ;
+    oekg:lastUpdate "2022-01-05T11:10:00+00:00"^^xsd:dateTime ;
+    oekg:openIssues 2 ;
+    oekg:owner "emmo-repo"^^xsd:string ;
+    oekg:stars 1 ;
+    omv:commonFactors "using emmo as a top-level ontology"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Mechanical Testing"^^xsd:string ;
+    omv:license "CC BY 4.0"^^xsd:string ;
+    omv:modificationDate "1-Jun-22"^^xsd:string ;
+    omv:name "EMMO Mechanical Testing"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "represent mechanical testing"^^xsd:string ;
+    omv:resourceLocator "https://github.com/emmo-repo/domain-mechanical-testing "^^xsd:anyURI ;
+    omv:useCases "mechanical testing"^^xsd:string ;
+    omv:usedInProject "MarketPlace, Oyster, UrWerk, iBain, StahlDigital"^^xsd:string .
 
-pmd_kg:rdfs a omv:Ontology .
+oekg:emmo_microstructure a omv:Ontology ;
+    oekg:branch "master"^^xsd:string ;
+    oekg:branchCount 1 ;
+    oekg:closedIssues 0 ;
+    oekg:description "Initial draft for an EMMO-based ontology for microstructures"^^xsd:string ;
+    oekg:forks 0 ;
+    oekg:language "None"^^xsd:string ;
+    oekg:lastUpdate "2020-02-11T18:37:10+00:00"^^xsd:dateTime ;
+    oekg:openIssues 0 ;
+    oekg:owner "jesper-friis"^^xsd:string ;
+    oekg:stars 0 ;
+    omv:commonFactors "using emmo as a top-level ontology"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Metallic Microstructures"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate "11-Feb-20"^^xsd:string ;
+    omv:name "EMMO Microstructure"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "covering composition, particles, both stable (primary) and metastable (precipitates), grains, subgrains, grain boundaries & particle free zones (PFZs),texture, dislocations"^^xsd:string ;
+    omv:resourceLocator "https://github.com/jesper-friis/emmo-microstructure "^^xsd:anyURI ;
+    omv:useCases "metallic microstructures"^^xsd:string ;
+    omv:usedInProject "iBain, StahlDigital"^^xsd:string .
 
-pmd_kg:xml a omv:Ontology .
+oekg:enanomapper a omv:Ontology ;
+    oekg:branch "510-term-request-photocatalytic-activity"^^xsd:string,
+        "TiO2SiO2-nanocomposite"^^xsd:string,
+        "batch-assays-endpoints-2"^^xsd:string,
+        "c-c-carboxy"^^xsd:string,
+        "cell-localization"^^xsd:string,
+        "endpoints_assays_sbd4nano"^^xsd:string,
+        "exposure-routes-sbd4nano-causal"^^xsd:string,
+        "hydrodynamic-size-as-size"^^xsd:string,
+        "master"^^xsd:string,
+        "migrate-robot"^^xsd:string,
+        "missing-sbd-terms"^^xsd:string,
+        "nmlco"^^xsd:string,
+        "sbd4nano-batch-4"^^xsd:string,
+        "sbd4nano-batch-5"^^xsd:string ;
+    oekg:branchCount 14 ;
+    oekg:closedIssues 26 ;
+    oekg:description "The eNanoMapper ontology"^^xsd:string ;
+    oekg:forks 15 ;
+    oekg:language "Python"^^xsd:string ;
+    oekg:lastUpdate "2024-10-01T02:06:12+00:00"^^xsd:dateTime ;
+    oekg:openIssues 4 ;
+    oekg:owner "enanomapper"^^xsd:string ;
+    oekg:stars 17 ;
+    omv:citations "82, https://scholar.google.de/scholar?cites=13834819785540490564&as_sdt=2005&sciodt=0,5&hl=de"^^xsd:string ;
+    omv:commonFactors "Based on BFO, used many external ontologies https://github.com/enanomapper/ontologies/tree/master/external"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Nanomaterial"^^xsd:string ;
+    omv:license "CC-BY 3.0"^^xsd:string ;
+    omv:modificationDate "18-Jan-23"^^xsd:string ;
+    omv:name "eNanoMapper"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "data integration for nanomaterial"^^xsd:string ;
+    omv:reference "https://jbiomedsem.biomedcentral.com/articles/10.1186/s13326-015-0005-5 "^^xsd:string ;
+    omv:resourceLocator "https://github.com/enanomapper/ontologies "^^xsd:anyURI ;
+    omv:usedInProject "NanoSolveIT, NanoCommons, OpenRiskNet, eNanoMapper, NANoREG, NanoReg2, GRACIOUS"^^xsd:string .
 
-pmd_kg:xsd a omv:Ontology .
+oekg:expo a omv:Ontology ;
+    omv:citations "232, https://www.semanticscholar.org/paper/An-ontology-of-scientific-experiments-Soldatova-King/d8cabfab960044afad0f0c64f707e364ad471cf1"^^xsd:string ;
+    omv:commonFactors "based on SUMO "^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Scientific Experiments"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate ""^^xsd:string ;
+    omv:name "Ontology of Scientific Experiments"^^xsd:string ;
+    omv:ontologyCategory "mid-level"^^xsd:string ;
+    omv:purpose "formalise generic knowledge about scientific experimental design, methodology, and results representation"^^xsd:string ;
+    omv:reference "https://royalsocietypublishing.org/doi/10.1098/rsif.2006.0134"^^xsd:string ;
+    omv:resourceLocator "https://expo.sourceforge.net/"^^xsd:anyURI .
+
+oekg:freeclass a omv:Ontology ;
+    omv:citations "1, https://doi.org/10.1016/j.compind.2015.07.005"^^xsd:string ;
+    omv:commonFactors "reuse/based on FreeClass, GoodRelations "^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Construction and building materials and services provides"^^xsd:string ;
+    omv:license "CC-BY 3.0"^^xsd:string ;
+    omv:modificationDate ""^^xsd:string ;
+    omv:name "FreeClassOWL Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose ""^^xsd:string ;
+    omv:resourceLocator "http://smartcity.linkeddata.es/ontologies/www.freeclass.eufreeclass_v1.owl.html"^^xsd:anyURI ;
+    omv:structuralDifferences "It's not modular"^^xsd:string ;
+    omv:usedInProject "Unknown"^^xsd:string .
+
+oekg:gpo a omv:Ontology ;
+    oekg:branch "gh-pages"^^xsd:string,
+        "master"^^xsd:string ;
+    oekg:branchCount 2 ;
+    oekg:closedIssues 0 ;
+    oekg:description "None"^^xsd:string ;
+    oekg:forks 1 ;
+    oekg:language "None"^^xsd:string ;
+    oekg:lastUpdate "2024-07-01T03:20:53+00:00"^^xsd:dateTime ;
+    oekg:openIssues 3 ;
+    oekg:owner "General-Process-Ontology"^^xsd:string ;
+    oekg:stars 0 ;
+    omv:commonFactors "Based on EMMO"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Process Modeling"^^xsd:string ;
+    omv:license "CC BY 4.0"^^xsd:string ;
+    omv:modificationDate "19-May-22"^^xsd:string ;
+    omv:name "EMMO General Process Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "model processes"^^xsd:string ;
+    omv:resourceLocator "https://github.com/General-Process-Ontology/ontology "^^xsd:anyURI ;
+    omv:usedInProject "KIproBatt, OpenSemanticLab, Battery Value Chain Ontology"^^xsd:string .
+
+oekg:iao a omv:Ontology ;
+    oekg:branch "2014-06-13"^^xsd:string,
+        "2015-01-02"^^xsd:string,
+        "alanr-isr-dev"^^xsd:string,
+        "integration/PNO"^^xsd:string,
+        "jzheng2007"^^xsd:string,
+        "master"^^xsd:string,
+        "merge-document-parts"^^xsd:string,
+        "remove-GAZ"^^xsd:string,
+        "ruttenberg-exploration"^^xsd:string,
+        "setup-CI"^^xsd:string ;
+    oekg:branchCount 10 ;
+    oekg:closedIssues 14 ;
+    oekg:description "information artifact ontology"^^xsd:string ;
+    oekg:forks 25 ;
+    oekg:language "Common Lisp"^^xsd:string ;
+    oekg:lastUpdate "2024-10-02T18:33:35+00:00"^^xsd:dateTime ;
+    oekg:openIssues 16 ;
+    oekg:owner "information-artifact-ontology"^^xsd:string ;
+    oekg:stars 77 ;
+    omv:citations "101, https://scholar.google.de/scholar?cites=9740979908528767104&as_sdt=2005&sciodt=0,5&hl=en"^^xsd:string ;
+    omv:commonFactors "BFO & OBO base"^^xsd:string ;
+    omv:competencyQuestion "https://openreview.net/forum?id=zd32pf6RLng"^^xsd:string ;
+    omv:domain "Information artifacts"^^xsd:string ;
+    omv:license "CC BY 4.0"^^xsd:string ;
+    omv:modificationDate "13-Jun-22"^^xsd:string ;
+    omv:name "Information Artifact Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "model the most tangible aspect of research in computing disciplines – the research artifacts"^^xsd:string ;
+    omv:reference "https://pubmed.ncbi.nlm.nih.gov/22874154/"^^xsd:string ;
+    omv:resourceLocator "https://github.com/information-artifact-ontology/IAO"^^xsd:anyURI ;
+    omv:usedInProject "Adverse Event Reporting Ontology, An Ontology for Drug Discovery Investigations, Beta Cell Genomics database, Bioinformatics Web Service Ontology, Blood Ontology, eagle-i, eNanoMapper, Influenza Research Database, ISA software suite, Knowledge Grid, Neural ElectroMagnetic Ontologies, Ontology for the obstetric and neonatal domain, Ontology of Data Mining"^^xsd:string .
+
+oekg:ldo a omv:Ontology ;
+    oekg:branch "main"^^xsd:string ;
+    oekg:branchCount 1 ;
+    oekg:closedIssues 3 ;
+    oekg:description "LDO - Line Defect Ontology"^^xsd:string ;
+    oekg:forks 0 ;
+    oekg:language "None"^^xsd:string ;
+    oekg:lastUpdate "2024-06-26T19:08:06+00:00"^^xsd:dateTime ;
+    oekg:openIssues 3 ;
+    oekg:owner "OCDO"^^xsd:string ;
+    oekg:stars 2 ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Materials Characterization"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate "Apr 12, 2024"^^xsd:string ;
+    omv:name "Line Defect Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "description of linear defects in crystalline materials"^^xsd:string ;
+    omv:resourceLocator "https://github.com/OCDO/ldo"^^xsd:anyURI .
+
+oekg:lpbfo a omv:Ontology ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Additive Manufacturing"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate "13-Oct-2022"^^xsd:string ;
+    omv:name "Laser Powder Bed Fusion Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "describe the additive manufacturing of a component via Laser Powder Bed Fusion (LPBF) / Selective Laser Melting (SLM)"^^xsd:string ;
+    omv:resourceLocator "https://matportal.org/ontologies/LPBFO"^^xsd:anyURI ;
+    omv:structuralDifferences "based on BFO2.0 and BWMD"^^xsd:string ;
+    omv:usedInProject "Materials Open Laboratory, AluTrace, DMD4Future, KMU-akut: ADAM"^^xsd:string .
+
+oekg:m4i a omv:Ontology ;
+    omv:citations "1, https://scholar.google.de/scholar?cites=8526414124804663178&as_sdt=2005&sciodt=0,5&hl=en"^^xsd:string ;
+    omv:competencyQuestion "https://git.rwth-aachen.de/nfdi4ing/metadata4ing/kompetenzfragen/-/tree/master"^^xsd:string ;
+    omv:domain "Process Modeling"^^xsd:string ;
+    omv:license """\r
+CC BY 4.0"""^^xsd:string ;
+    omv:modificationDate "25-Jan-2023"^^xsd:string ;
+    omv:name "Metadata4Ing Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "describing engineering results and their corresponding workflow"^^xsd:string ;
+    omv:reference "https://zenodo.org/record/5957104#.Y-DI9q3MJPY"^^xsd:string ;
+    omv:resourceLocator "https://git.rwth-aachen.de/nfdi4ing/metadata4ing/metadata4ing"^^xsd:anyURI ;
+    omv:usedInProject "NFDI4Ing "^^xsd:string .
+
+oekg:mambo a omv:Ontology ;
+    oekg:branch "master"^^xsd:string ;
+    oekg:branchCount 1 ;
+    oekg:closedIssues 1 ;
+    oekg:description "Ontology for molecular materials development and design"^^xsd:string ;
+    oekg:forks 0 ;
+    oekg:language "Python"^^xsd:string ;
+    oekg:lastUpdate "2024-07-16T14:32:42+00:00"^^xsd:dateTime ;
+    oekg:openIssues 1 ;
+    oekg:owner "daimoners"^^xsd:string ;
+    oekg:stars 0 ;
+    omv:citations "3, https://scholar.google.de/scholar?cites=6310126087377153546&as_sdt=2005&sciodt=0,5&hl=en"^^xsd:string ;
+    omv:commonFactors "modular"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Molecular Materials"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate "30-Nov-22"^^xsd:string ;
+    omv:name "Materials And Molecules Basic Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "Allowing the retrieval of structured information regarding molecular materials and related applications (i.e. devices based on molecular, materials), Supporting the development of new, complex workflows for modelling systems based on molecular materials (computational modelling and data-driven techniques), Integrating data generated via computational simulations and empirical experiments"^^xsd:string ;
+    omv:reference "https://openreview.net/forum?id=66VZ_9VC9ys "^^xsd:string ;
+    omv:resourceLocator "https://github.com/daimoners/MAMBO "^^xsd:anyURI ;
+    omv:usedInProject "Unknown"^^xsd:string .
+
+oekg:mat a omv:Ontology ;
+    omv:commonFactors "based on SAREF ontology"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Materials Science"^^xsd:string ;
+    omv:license """\r
+CC BY 4.0"""^^xsd:string ;
+    omv:modificationDate ""^^xsd:string ;
+    omv:name "Material properties ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "description of building components and materials"^^xsd:string ;
+    omv:resourceLocator "https://bimerr.iot.linkeddata.es/def/material-properties/"^^xsd:anyURI ;
+    omv:usedInProject "H2020 BIMERR Project"^^xsd:string .
+
+oekg:materialsmine a omv:Ontology ;
+    oekg:branch "dependabot/pip/celery-5.2.2"^^xsd:string,
+        "dependabot/pip/certifi-2023.7.22"^^xsd:string,
+        "dependabot/pip/cookiecutter-2.1.1"^^xsd:string,
+        "dependabot/pip/flask-2.3.2"^^xsd:string,
+        "dependabot/pip/future-0.18.3"^^xsd:string,
+        "dependabot/pip/joblib-1.2.0"^^xsd:string,
+        "dependabot/pip/lxml-4.9.1"^^xsd:string,
+        "dependabot/pip/mod-wsgi-4.9.3"^^xsd:string,
+        "dependabot/pip/nltk-3.6.6"^^xsd:string,
+        "dependabot/pip/numpy-1.22.0"^^xsd:string,
+        "dependabot/pip/pygments-2.15.0"^^xsd:string,
+        "dependabot/pip/pyjwt-2.4.0"^^xsd:string,
+        "dependabot/pip/redis-4.4.4"^^xsd:string,
+        "dependabot/pip/requests-2.31.0"^^xsd:string,
+        "dependabot/pip/scipy-1.10.0"^^xsd:string,
+        "dependabot/pip/setuptools-65.5.1"^^xsd:string,
+        "dependabot/pip/werkzeug-2.2.3"^^xsd:string,
+        "dependabot/pip/wheel-0.38.1"^^xsd:string,
+        "master"^^xsd:string,
+        "processing"^^xsd:string,
+        "rheometer_tests"^^xsd:string,
+        "sabbir_proc"^^xsd:string ;
+    oekg:branchCount 22 ;
+    oekg:closedIssues 5 ;
+    oekg:description "None"^^xsd:string ;
+    oekg:forks 2 ;
+    oekg:language "Python"^^xsd:string ;
+    oekg:lastUpdate "2023-01-20T15:16:32+00:00"^^xsd:dateTime ;
+    oekg:openIssues 25 ;
+    oekg:owner "tetherless-world"^^xsd:string ;
+    oekg:stars 2 ;
+    omv:commonFactors "SIO top level ontology"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Materials Science"^^xsd:string ;
+    omv:license "MIT License"^^xsd:string ;
+    omv:modificationDate "12-Jan-22"^^xsd:string ;
+    omv:name "MaterialsMine"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:overlaps "reusing NanoMine, PROVO"^^xsd:string ;
+    omv:purpose "A materials ontology to support data publication involving nanomaterials and metamaterials"^^xsd:string ;
+    omv:resourceLocator "https://github.com/tetherless-world/materialsmine"^^xsd:anyURI .
+
+oekg:matinfo a omv:Ontology ;
+    omv:citations "122, https://scholar.google.de/scholar?cites=17440634165056042916&as_sdt=2005&sciodt=0,5&hl=en"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Exchanging Materials Information and Knowledge"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate ""^^xsd:string ;
+    omv:name "Materials Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose ""^^xsd:string ;
+    omv:reference "https://datascience.codata.org/articles/abstract/10.2481/dsj.008-041/ "^^xsd:string ;
+    omv:resourceLocator "https://www.researchgate.net/publication/262004148_MaterialOntology"^^xsd:anyURI ;
+    omv:structuralDifferences "modular"^^xsd:string ;
+    omv:usedInProject "Data exchange of AIST, NIMS, MatDB"^^xsd:string .
+
+oekg:matonto a omv:Ontology ;
+    oekg:branch "ax"^^xsd:string,
+        "faze"^^xsd:string,
+        "master"^^xsd:string ;
+    oekg:branchCount 3 ;
+    oekg:closedIssues 7 ;
+    oekg:description "Ontologies for the MatOnto Project"^^xsd:string ;
+    oekg:forks 4 ;
+    oekg:language "None"^^xsd:string ;
+    oekg:lastUpdate "2024-06-27T00:59:23+00:00"^^xsd:dateTime ;
+    oekg:openIssues 0 ;
+    oekg:owner "inovexcorp"^^xsd:string ;
+    oekg:stars 7 ;
+    omv:commonFactors "reuse DOLCE/Ontolingua’s Units and Dimensions, JCAS, W3C Time"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Materials Discovery"^^xsd:string ;
+    omv:license "MIT License"^^xsd:string ;
+    omv:modificationDate "8-Aug-14"^^xsd:string ;
+    omv:name "MatOnto"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose ""^^xsd:string ;
+    omv:resourceLocator "https://github.com/inovexcorp/MatOnto-Ontologies "^^xsd:anyURI ;
+    omv:structuralDifferences "modular"^^xsd:string ;
+    omv:useCases "PhaseEquilibriumData, ceramic"^^xsd:string ;
+    omv:usedInProject "Unknown"^^xsd:string .
+
+oekg:matowl a omv:Ontology ;
+    omv:citations "28, https://scholar.google.de/scholar?cites=6236892888557771758&as_sdt=2005&sciodt=0,5&hl=en"^^xsd:string ;
+    omv:commonFactors "reused MatML Schema"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Materials Discovery"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate ""^^xsd:string ;
+    omv:name "MatOWL"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose ""^^xsd:string ;
+    omv:reference "https://doi.org/10.2481/dsj.8.1"^^xsd:string ;
+    omv:resourceLocator ""^^xsd:anyURI ;
+    omv:structuralDifferences "It's not modular"^^xsd:string ;
+    omv:usedInProject "the Key Technologies Research and Development Program of China under, the R&D Infrastructure and Facility Development Program, the Hi-Tech Research and Development Program of China"^^xsd:string .
+
+oekg:matvoc a omv:Ontology ;
+    oekg:branch "Stream_test"^^xsd:string,
+        "master"^^xsd:string,
+        "nomad"^^xsd:string ;
+    oekg:branchCount 3 ;
+    oekg:closedIssues 2 ;
+    oekg:description "The official ontology produced in the conext of the STREAM project"^^xsd:string ;
+    oekg:forks 3 ;
+    oekg:language "Shell"^^xsd:string ;
+    oekg:lastUpdate "2023-09-01T09:42:56+00:00"^^xsd:dateTime ;
+    oekg:openIssues 3 ;
+    oekg:owner "stream-project"^^xsd:string ;
+    oekg:stars 3 ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain ""^^xsd:string ;
+    omv:license "MIT License"^^xsd:string ;
+    omv:modificationDate "12-Dec-2022"^^xsd:string ;
+    omv:name "Materials Vocabulary"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "described using W3C RDF Schema and the Web Ontology Language to satisfy the requirements of the STREAM project"^^xsd:string ;
+    omv:resourceLocator "https://github.com/stream-project/ontology"^^xsd:anyURI ;
+    omv:usedInProject "STREAM project"^^xsd:string .
+
+oekg:mdo a omv:Ontology ;
+    oekg:branch "master"^^xsd:string,
+        "optimade"^^xsd:string ;
+    oekg:branchCount 2 ;
+    oekg:closedIssues 4 ;
+    oekg:description "An Ontology for the Materials Design Domain"^^xsd:string ;
+    oekg:forks 9 ;
+    oekg:language "CSS"^^xsd:string ;
+    oekg:lastUpdate "2024-04-02T17:40:22+00:00"^^xsd:dateTime ;
+    oekg:openIssues 0 ;
+    oekg:owner "LiUSemWeb"^^xsd:string ;
+    oekg:stars 25 ;
+    omv:citations "7, https://citations.springernature.com/item?doi=10.1007/978-3-030-62466-8_14"^^xsd:string ;
+    omv:commonFactors "modular"^^xsd:string ;
+    omv:competencyQuestion "https://github.com/LiUSemWeb/Materials-Design-Ontology/blob/master/requirements.md"^^xsd:string ;
+    omv:domain "Materials Design"^^xsd:string ;
+    omv:license "MIT License"^^xsd:string ;
+    omv:modificationDate "26-Jan-22"^^xsd:string ;
+    omv:name "Materials Design Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "the domain knowledge specifically related to solid-state physics and computational materials science"^^xsd:string ;
+    omv:reference "https://link.springer.com/chapter/10.1007/978-3-030-62466-8_14 "^^xsd:string ;
+    omv:resourceLocator "https://github.com/LiUSemWeb/Materials-Design-Ontology "^^xsd:anyURI ;
+    omv:useCases """literature study and discussion between the domain expert and the \r
+knowledge engineers based on experience with the development of OPTIMADE\r
+ and the use of materials science databases"""^^xsd:string ;
+    omv:usedInProject "Materials Design (OPTIMADE) project"^^xsd:string .
+
+oekg:mds a omv:Ontology ;
+    omv:commonFactors "mapped to PMDco and BFO"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Materials Science"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate "06/10/2024"^^xsd:string ;
+    omv:name "Materials Data Science Ontology"^^xsd:string ;
+    omv:ontologyCategory "mid-level"^^xsd:string ;
+    omv:purpose "Materials Data Science(MDS) is an ontology encompassing multiple domains relevant to materials science, chemical synthesis and characterizations, photovoltaics and geospatial datasets. The terms used for classes, subclasses and instances are mapped to PMDCo and BFO Ontologies."^^xsd:string ;
+    omv:resourceLocator "https://matportal.org/ontologies/MDS"^^xsd:anyURI ;
+    omv:usedInProject """\r
+\r
+Materials Data Science for Stockpile Stewardship: Center of Excellence, SDLE Research Center"""^^xsd:string .
+
+oekg:metalalloy a omv:Ontology ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Materials representation"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate ""^^xsd:string ;
+    omv:name "Metal Alloy"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose ""^^xsd:string ;
+    omv:resourceLocator "https://emmc.info/taxonda/metal-alloy/ "^^xsd:anyURI ;
+    omv:usedInProject "Unknown"^^xsd:string .
+
+oekg:mmoy a omv:Ontology ;
+    omv:citations "10, https://scholar.google.de/scholar?cites=13438391881483974430&as_sdt=2005&sciodt=0,5&hl=de"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Metallic materials"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate ""^^xsd:string ;
+    omv:name "MMOY"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose ""^^xsd:string ;
+    omv:reference "https://doi.org/10.1016/j.aei.2016.09.002"^^xsd:string ;
+    omv:resourceLocator ""^^xsd:anyURI ;
+    omv:usedInProject "Unknown"^^xsd:string .
+
+oekg:mol_brinell a omv:Ontology ;
+    omv:commonFactors "based on ISO stardard"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Mechanical Testing"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate "05-May-2022"^^xsd:string ;
+    omv:name "MatoLab Brinell Test Ontology"^^xsd:string ;
+    omv:ontologyCategory "application-level"^^xsd:string ;
+    omv:purpose "Brinell Hardness method modelling"^^xsd:string ;
+    omv:resourceLocator "https://matportal.org/ontologies/MOL_BRINELL"^^xsd:anyURI ;
+    omv:usedInProject "Unknown"^^xsd:string .
+
+oekg:mol_tensile a omv:Ontology ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Tensile Test"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate "16-April-2021"^^xsd:string ;
+    omv:name "Matolab Tensile Test Ontology"^^xsd:string ;
+    omv:ontologyCategory "application-level"^^xsd:string ;
+    omv:purpose "An ontology for describing the tensile test process, made in the Materials Open Lab Project."^^xsd:string ;
+    omv:resourceLocator "https://matportal.org/ontologies/MOL_TENSILE"^^xsd:anyURI ;
+    omv:structuralDifferences "based on BWMD ontology"^^xsd:string ;
+    omv:usedInProject "Materials Open Laboratory"^^xsd:string .
+
+oekg:mseo a omv:Ontology ;
+    oekg:branch "2-clear-up-inconsistencies"^^xsd:string,
+        "Edit_TEM_Investigation"^^xsd:string,
+        "documentation"^^xsd:string,
+        "main"^^xsd:string,
+        "testpipeline"^^xsd:string ;
+    oekg:branchCount 5 ;
+    oekg:closedIssues 6 ;
+    oekg:description "Repository of Material Science and Engineering Ontology MSEO"^^xsd:string ;
+    oekg:forks 3 ;
+    oekg:language "Jupyter Notebook"^^xsd:string ;
+    oekg:lastUpdate "2024-04-02T17:40:22+00:00"^^xsd:dateTime ;
+    oekg:openIssues 3 ;
+    oekg:owner "Mat-O-Lab"^^xsd:string ;
+    oekg:stars 8 ;
+    omv:commonFactors "the mid and domain level modules of the Materials Sience and Engineering Ontology MSEO as well as Tools too transform experiment data"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Material Sience and Engineering"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate "11-Mar-22"^^xsd:string ;
+    omv:name "Material Science and Engineering Ontology"^^xsd:string ;
+    omv:ontologyCategory "middle-level"^^xsd:string ;
+    omv:overlaps "BWMD"^^xsd:string ;
+    omv:purpose "create machine and human readable sematic data which can be easily digested by other science domains"^^xsd:string ;
+    omv:resourceLocator "https://github.com/Mat-O-Lab/MSEO"^^xsd:anyURI ;
+    omv:structuralDifferences "utilizes the Common Core Ontolog"^^xsd:string ;
+    omv:useCases "Brinell Hardness Testing"^^xsd:string ;
+    omv:usedInProject "Materials Open Laboratory, LeBeDigital, KupferDigital"^^xsd:string .
+
+oekg:msle a omv:Ontology ;
+    oekg:branch "main"^^xsd:string ;
+    oekg:branchCount 1 ;
+    oekg:closedIssues 0 ;
+    oekg:description "Material Science Lab Equipment Ontology"^^xsd:string ;
+    oekg:forks 0 ;
+    oekg:language "None"^^xsd:string ;
+    oekg:lastUpdate "2022-04-01T09:20:07+00:00"^^xsd:dateTime ;
+    oekg:openIssues 0 ;
+    oekg:owner "MehrdadJalali-AI"^^xsd:string ;
+    oekg:stars 0 ;
+    omv:commonFactors "main existing ontologies, the Semantic Sensor Network (SSN) and the Material Vocabulary (MatVoc), have been integrated into the MSLE core. Constraints are modeled in the Shapes Query Language (SHACL)"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Materials Characterization"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate "Sep 15, 2022"^^xsd:string ;
+    omv:name "Material Science Lab Equipment Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "describing Materials Science Laboratory Equipment"^^xsd:string ;
+    omv:reference "https://doi.org/10.1016/j.mtcomm.2023.105532"^^xsd:string ;
+    omv:resourceLocator "https://github.com/MehrdadJalali-KIT/MSLE-Ontology"^^xsd:anyURI .
+
+oekg:mwo a omv:Ontology ;
+    omv:commonFactors "Modular, Mappings to numerous external vocabularies and ontologies are provided in an extra file."^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Research Data Description"^^xsd:string ;
+    omv:license """\r
+CC BY 4.0"""^^xsd:string ;
+    omv:modificationDate "27-Feb-2023"^^xsd:string ;
+    omv:name "MatWerk Ontology"^^xsd:string ;
+    omv:ontologyCategory "mid-level"^^xsd:string ;
+    omv:purpose "represent the scientific and infrastructural status of the Materials Science and Engineering (MSE) community"^^xsd:string ;
+    omv:resourceLocator "https://git.rwth-aachen.de/nfdi-matwerk/ta-oms/mwo"^^xsd:anyURI ;
+    omv:usedInProject "NFDI MatWerk"^^xsd:string .
+
+oekg:nanomine a omv:Ontology ;
+    oekg:branch "master"^^xsd:string ;
+    oekg:branchCount 1 ;
+    oekg:closedIssues 0 ;
+    oekg:description "Ontology and related data support for the Nanomine project."^^xsd:string ;
+    oekg:forks 3 ;
+    oekg:language "JavaScript"^^xsd:string ;
+    oekg:lastUpdate "2023-03-07T21:22:49+00:00"^^xsd:dateTime ;
+    oekg:openIssues 1 ;
+    oekg:owner "tetherless-world"^^xsd:string ;
+    oekg:stars 3 ;
+    omv:citations "38, https://scholar.google.de/scholar?cites=12080685925036226858&as_sdt=2005&sciodt=0,5&hl=de"^^xsd:string ;
+    omv:commonFactors "SIO top level ontology"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Polymer Nanocomposites"^^xsd:string ;
+    omv:license "CC BY 4.0"^^xsd:string ;
+    omv:modificationDate "09-May-2018"^^xsd:string ;
+    omv:name "NanoMine"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose """enable researchers to develop and test broad-reaching hypotheses about how inter-relationships\r
+between different materials processing methods and composition result in specific changes in material properties"""^^xsd:string ;
+    omv:reference "https://doi.org/10.1063/1.5046839"^^xsd:string ;
+    omv:resourceLocator "https://github.com/tetherless-world/nanomine-ontology "^^xsd:anyURI ;
+    omv:usedInProject "Nanomine"^^xsd:string .
+
+oekg:ncit a omv:Ontology ;
+    oekg:branch "go-mapping"^^xsd:string,
+        "master"^^xsd:string ;
+    oekg:branchCount 2 ;
+    oekg:closedIssues 11 ;
+    oekg:description "OBO Library edition of NCIt"^^xsd:string ;
+    oekg:forks 8 ;
+    oekg:language "Makefile"^^xsd:string ;
+    oekg:lastUpdate "2024-05-07T18:11:54+00:00"^^xsd:dateTime ;
+    oekg:openIssues 19 ;
+    oekg:owner "NCI-Thesaurus"^^xsd:string ;
+    oekg:stars 22 ;
+    omv:citations "48, https://scholar.google.de/scholar?cites=5826104452354580506&as_sdt=2005&sciodt=0,5&hl=en"^^xsd:string ;
+    omv:competencyQuestion "https://github.com/NCI-Thesaurus/thesaurus-obo-edition/blob/master/docs/queries/D6.MolecularSubtypingQueries.txt"^^xsd:string ;
+    omv:domain "Reference Terminology"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate "18-Apr-22"^^xsd:string ;
+    omv:name "NCI Thesaurus OBO Edition"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose ""^^xsd:string ;
+    omv:reference "https://link.springer.com/chapter/10.1007/11527770_30"^^xsd:string ;
+    omv:resourceLocator "https://github.com/NCI-Thesaurus/thesaurus-obo-edition"^^xsd:anyURI ;
+    omv:usedInProject "Unknown"^^xsd:string .
+
+oekg:nfdicore a omv:Ontology ;
+    omv:commonFactors "Modular, Mappings to numerous external vocabularies and ontologies are provided in an extra file."^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Research Data Description"^^xsd:string ;
+    omv:license "CC0 1.0"^^xsd:string ;
+    omv:modificationDate "27-Feb-2023"^^xsd:string ;
+    omv:name "NFDI Core Ontology"^^xsd:string ;
+    omv:ontologyCategory "mid-level"^^xsd:string ;
+    omv:purpose "describes resouces (datasets, data providers, persons, projects and other entities) in the data domain of NFDI (https://www.nfdi.de/)"^^xsd:string ;
+    omv:resourceLocator "https://github.com/ISE-FIZKarlsruhe/nfdicore"^^xsd:anyURI ;
+    omv:usedInProject "NFDI4Culture, NFDI MatWerk"^^xsd:string .
+
+oekg:npo a omv:Ontology ;
+    oekg:branch "devel"^^xsd:string,
+        "master"^^xsd:string ;
+    oekg:branchCount 2 ;
+    oekg:closedIssues 7 ;
+    oekg:description "NanoParticle Ontology"^^xsd:string ;
+    oekg:forks 6 ;
+    oekg:language "Web Ontology Language"^^xsd:string ;
+    oekg:lastUpdate "2016-01-20T05:26:40+00:00"^^xsd:dateTime ;
+    oekg:openIssues 0 ;
+    oekg:owner "sobolevnrm"^^xsd:string ;
+    oekg:stars 2 ;
+    omv:citations "135, https://scholar.google.de/scholar?cites=2668187709073527374&as_sdt=2005&sciodt=0,5&hl=en"^^xsd:string ;
+    omv:commonFactors "based on BFO, mappings to external vocabularies http://www.nano-ontology.org/"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Cancer Nanotechnology"^^xsd:string ;
+    omv:license """BSD-3-Clause license\r
+    """^^xsd:string ;
+    omv:modificationDate "24-Sep-13"^^xsd:string ;
+    omv:name "NanoParticle Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose """represent the knowledge underlying the description, preparation, and \r
+characterization of nanomaterials in cancer nanotechnology research"""^^xsd:string ;
+    omv:reference "https://www.sciencedirect.com/science/article/pii/S1532046410000341?via%3Dihub "^^xsd:string ;
+    omv:resourceLocator "https://github.com/sobolevnrm/npo "^^xsd:anyURI ;
+    omv:usedInProject """\r
+caB2B, eNanoMapper, nano-TAB"""^^xsd:string .
+
+oekg:oa a omv:Ontology ;
+    oekg:branch "bigbluehat-html-note-contribs"^^xsd:string,
+        "citation-urls-improvements"^^xsd:string,
+        "epub-book"^^xsd:string,
+        "fix-selector-note-editor"^^xsd:string,
+        "fix-selectors-note-ref"^^xsd:string,
+        "gh-pages"^^xsd:string,
+        "html-note-improve-rdfa"^^xsd:string,
+        "preparing-rec-publ"^^xsd:string,
+        "selector-fragement-uri-usage"^^xsd:string,
+        "svg-fix"^^xsd:string ;
+    oekg:branchCount 10 ;
+    oekg:closedIssues 5 ;
+    oekg:description "Web Annotation Working Group repository, see README for links to specs"^^xsd:string ;
+    oekg:forks 30 ;
+    oekg:language "HTML"^^xsd:string ;
+    oekg:lastUpdate "2024-09-18T14:27:48+00:00"^^xsd:dateTime ;
+    oekg:openIssues 25 ;
+    oekg:owner "w3c"^^xsd:string ;
+    oekg:stars 142 ;
+    omv:citations "183, https://scholar.google.de/scholar?cites=15728387328978931242&as_sdt=2005&sciodt=0,5&hl=en"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Annotations"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate "4-May-17"^^xsd:string ;
+    omv:name "Web Annotation Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose ""^^xsd:string ;
+    omv:reference "https://doi.org/10.1186/2041-1480-2-S2-S4"^^xsd:string ;
+    omv:resourceLocator "https://github.com/w3c/web-annotation"^^xsd:anyURI ;
+    omv:usedInProject "Unknown"^^xsd:string .
+
+oekg:obi a omv:Ontology ;
+    oekg:branch "1772-ntr-deionized-water-and-water-deionization-process"^^xsd:string,
+        "1799_fix_assay_lang_tags"^^xsd:string,
+        "1806_replace_obsolete_GO_terms"^^xsd:string,
+        "1825-add-grouping-classes-for-series-of-dna-sequencers"^^xsd:string,
+        "4DN"^^xsd:string,
+        "FAIRE-seq-1556"^^xsd:string,
+        "albumin-free-serum-instance"^^xsd:string,
+        "antimicrobial-issue-1322"^^xsd:string,
+        "avsculley-master"^^xsd:string,
+        "cob"^^xsd:string,
+        "cob_transition"^^xsd:string,
+        "cob_transition_1"^^xsd:string,
+        "cob_transition_2"^^xsd:string,
+        "cob_transition_3"^^xsd:string,
+        "core-test"^^xsd:string,
+        "create_RO_import"^^xsd:string,
+        "danberrios"^^xsd:string,
+        "demo-site"^^xsd:string,
+        "gene_silencing_assay_559"^^xsd:string,
+        "genome-coverage-#1634-"^^xsd:string,
+        "harmonize_solvent_1771"^^xsd:string,
+        "hcc_terms_07.2023"^^xsd:string,
+        "iao_import_module"^^xsd:string,
+        "illumina_1665"^^xsd:string,
+        "image-data-set-template-1481"^^xsd:string,
+        "import-update"^^xsd:string,
+        "is_manufactured_by_1116"^^xsd:string,
+        "issue-1602"^^xsd:string,
+        "issue-1603"^^xsd:string,
+        "local-field-1595"^^xsd:string ;
+    oekg:branchCount 30 ;
+    oekg:closedIssues 16 ;
+    oekg:description "The Ontology for Biomedical Investigations"^^xsd:string ;
+    oekg:forks 26 ;
+    oekg:language "Python"^^xsd:string ;
+    oekg:lastUpdate "2024-10-22T14:27:58+00:00"^^xsd:dateTime ;
+    oekg:openIssues 14 ;
+    oekg:owner "obi-ontology"^^xsd:string ;
+    oekg:stars 75 ;
+    omv:citations "287, https://scholar.google.de/scholar?cites=9073086805698939095&as_sdt=2005&sciodt=0,5&hl=de"^^xsd:string ;
+    omv:commonFactors "BFO & OBO based"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Biomedicine"^^xsd:string ;
+    omv:license "CC-BY 4.0"^^xsd:string ;
+    omv:modificationDate "11-Jul-22"^^xsd:string ;
+    omv:name "Ontology for Biomedical Investigations"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "a resource for annotating biomedical investigations, including the study design, protocols and instrumentation used, the data generated and the types of analysis performed on the data."^^xsd:string ;
+    omv:reference "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0154556"^^xsd:string ;
+    omv:resourceLocator "https://github.com/obi-ontology/obi"^^xsd:anyURI ;
+    omv:usedInProject "OBO Foundry, Allotrope™, PubChem"^^xsd:string .
+
+oekg:obo a omv:Ontology ;
+    oekg:branch "fix-atemporal"^^xsd:string,
+        "gh-pages"^^xsd:string,
+        "master"^^xsd:string,
+        "release-2024-01-10"^^xsd:string ;
+    oekg:branchCount 4 ;
+    oekg:closedIssues 9 ;
+    oekg:description "A repository for BFO 2020 artifacts specified in ISO 21838-2:2020"^^xsd:string ;
+    oekg:forks 28 ;
+    oekg:language "Makefile"^^xsd:string ;
+    oekg:lastUpdate "2024-10-23T10:29:02+00:00"^^xsd:dateTime ;
+    oekg:openIssues 21 ;
+    oekg:owner "BFO-ontology"^^xsd:string ;
+    oekg:stars 78 ;
+    omv:citations "989, https://scholar.google.de/scholar?cites=12253744211858283950&as_sdt=2005&sciodt=0,5&hl=de"^^xsd:string ;
+    omv:commonFactors "top level ontology, used in many projects"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain ""^^xsd:string ;
+    omv:license "CC BY 4.0"^^xsd:string ;
+    omv:modificationDate "16-Feb-22"^^xsd:string ;
+    omv:name "Basic Formal Ontology"^^xsd:string ;
+    omv:ontologyCategory "top-level"^^xsd:string ;
+    omv:purpose "information retrieval, analysis and integration"^^xsd:string ;
+    omv:reference "Arp, Robert, Barry Smith, and Andrew D. Spear. Building ontologies with basic formal ontology. Mit Press, 2015."^^xsd:string ;
+    omv:resourceLocator "https://github.com/BFO-ontology/BFO-2020 "^^xsd:anyURI ;
+    omv:structuralDifferences "OBO backbone"^^xsd:string ;
+    omv:usedInProject "300 ontologies, 50 organizations, PubChem, ODE_AM, DIGITRUBBER"^^xsd:string .
+
+oekg:oeo a omv:Ontology ;
+    oekg:branch "1809"^^xsd:string,
+        "Correction-of-implementing-mistake-concerning-emission-value"^^xsd:string,
+        "UStucky-patch-1"^^xsd:string,
+        "UStucky-patch-3"^^xsd:string,
+        "changelog-unreleased-1.15.0"^^xsd:string,
+        "chrwm-patch-1"^^xsd:string,
+        "dev"^^xsd:string,
+        "feature-1124-infer-axioms-after-building"^^xsd:string,
+        "feature-1154-update-import-module-process"^^xsd:string,
+        "feature-1179-annotations-attached-to-axioms-seem-to-disappear-in-protege"^^xsd:string,
+        "feature-1333-axiomatise-sectors"^^xsd:string,
+        "feature-1355-simplify-new-adding-users"^^xsd:string,
+        "feature-1495-bugfix-air"^^xsd:string,
+        "feature-1526-fuel-production"^^xsd:string,
+        "feature-1527-energy-transformations-and-transfer"^^xsd:string,
+        "feature-1622-charging"^^xsd:string,
+        "feature-1645-add-annotation-script"^^xsd:string,
+        "feature-1738-clean-oeo-import-edits"^^xsd:string,
+        "feature-1794-add-characteristic-of"^^xsd:string,
+        "feature-1805-add-new-contributor"^^xsd:string,
+        "feature-1808-update-docs"^^xsd:string,
+        "feature-1829-add-concepts-for-uncertainties"^^xsd:string,
+        "feature-1830-compose-units"^^xsd:string,
+        "feature/CQs_new"^^xsd:string,
+        "feature/KG"^^xsd:string,
+        "feature/competency_questions"^^xsd:string,
+        "feature/geo"^^xsd:string,
+        "feature/oops"^^xsd:string,
+        "feature/sector-and-sector-concepts"^^xsd:string,
+        "feature/travis"^^xsd:string ;
+    oekg:branchCount 30 ;
+    oekg:closedIssues 18 ;
+    oekg:description "Repository for the Open Energy Ontology (OEO)"^^xsd:string ;
+    oekg:forks 23 ;
+    oekg:language "Python"^^xsd:string ;
+    oekg:lastUpdate "2024-11-03T21:46:15+00:00"^^xsd:dateTime ;
+    oekg:openIssues 12 ;
+    oekg:owner "OpenEnergyPlatform"^^xsd:string ;
+    oekg:stars 108 ;
+    omv:citations "33, https://scholar.google.de/scholar?cites=10985200504058512161&as_sdt=2005&sciodt=0,5&hl=en"^^xsd:string ;
+    omv:commonFactors "based on BFO, using external ontologies https://github.com/OpenEnergyPlatform/ontology/wiki/use-of-external-ontologies"^^xsd:string ;
+    omv:competencyQuestion "https://github.com/OpenEnergyPlatform/ontology/tree/dev/tests/competency_questions"^^xsd:string ;
+    omv:domain "Energy Modelling"^^xsd:string ;
+    omv:license "CC0 1.0"^^xsd:string ;
+    omv:modificationDate "19-Jul-22"^^xsd:string ;
+    omv:name "Open Energy Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "represent the context of energy system analysis based on standard terminologies used by human experts in this field of research"^^xsd:string ;
+    omv:reference "https://doi.org/10.1016/j.egyai.2021.100074"^^xsd:string ;
+    omv:resourceLocator "https://github.com/OpenEnergyPlatform/ontology"^^xsd:anyURI ;
+    omv:usedInProject "SzenarienDB"^^xsd:string .
+
+oekg:oie_characterisation-methods a omv:Ontology ;
+    oekg:branch "main"^^xsd:string ;
+    oekg:branchCount 1 ;
+    oekg:closedIssues 0 ;
+    oekg:description "Open Innovation Environment (OIE) domain ontologies"^^xsd:string ;
+    oekg:forks 1 ;
+    oekg:language "None"^^xsd:string ;
+    oekg:lastUpdate "2022-07-15T11:20:06+00:00"^^xsd:dateTime ;
+    oekg:openIssues 0 ;
+    oekg:owner "emmo-repo"^^xsd:string ;
+    oekg:stars 0 ;
+    omv:commonFactors "EMMO"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Materials Characterization"^^xsd:string ;
+    omv:license "CC BY 4.0"^^xsd:string ;
+    omv:modificationDate "May 27, 2022"^^xsd:string ;
+    omv:name "Open Innovation Environment domain ontologies, characterisation methods"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "OYSTER"^^xsd:string ;
+    omv:resourceLocator "https://github.com/emmo-repo/OIE-Ontologies/"^^xsd:anyURI ;
+    omv:structuralDifferences "modular"^^xsd:string .
+
+oekg:oie_manufacturing a omv:Ontology ;
+    oekg:branch "main"^^xsd:string ;
+    oekg:branchCount 1 ;
+    oekg:closedIssues 0 ;
+    oekg:description "Open Innovation Environment (OIE) domain ontologies"^^xsd:string ;
+    oekg:forks 1 ;
+    oekg:language "None"^^xsd:string ;
+    oekg:lastUpdate "2022-07-15T11:20:06+00:00"^^xsd:dateTime ;
+    oekg:openIssues 0 ;
+    oekg:owner "emmo-repo"^^xsd:string ;
+    oekg:stars 0 ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Manufacturing Processes"^^xsd:string ;
+    omv:license "CC BY 4.0"^^xsd:string ;
+    omv:modificationDate "May 27, 2022"^^xsd:string ;
+    omv:name "Open Innovation Environment domain ontologies, manufacturing processes module"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "OYSTER"^^xsd:string ;
+    omv:resourceLocator "https://github.com/emmo-repo/OIE-Ontologies/"^^xsd:anyURI .
+
+oekg:oie_materials a omv:Ontology ;
+    oekg:branch "main"^^xsd:string ;
+    oekg:branchCount 1 ;
+    oekg:closedIssues 0 ;
+    oekg:description "Open Innovation Environment (OIE) domain ontologies"^^xsd:string ;
+    oekg:forks 1 ;
+    oekg:language "None"^^xsd:string ;
+    oekg:lastUpdate "2022-07-15T11:20:06+00:00"^^xsd:dateTime ;
+    oekg:openIssues 0 ;
+    oekg:owner "emmo-repo"^^xsd:string ;
+    oekg:stars 0 ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Materials Models"^^xsd:string ;
+    omv:license "CC BY 4.0"^^xsd:string ;
+    omv:modificationDate "May 27, 2022"^^xsd:string ;
+    omv:name "Open Innovation Environment domain ontologies, materials models module"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "OYSTER"^^xsd:string ;
+    omv:resourceLocator "https://github.com/emmo-repo/OIE-Ontologies/"^^xsd:anyURI .
+
+oekg:oie_models a omv:Ontology ;
+    oekg:branch "main"^^xsd:string ;
+    oekg:branchCount 1 ;
+    oekg:closedIssues 0 ;
+    oekg:description "Open Innovation Environment (OIE) domain ontologies"^^xsd:string ;
+    oekg:forks 1 ;
+    oekg:language "None"^^xsd:string ;
+    oekg:lastUpdate "2022-07-15T11:20:06+00:00"^^xsd:dateTime ;
+    oekg:openIssues 0 ;
+    oekg:owner "emmo-repo"^^xsd:string ;
+    oekg:stars 0 ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Modelling"^^xsd:string ;
+    omv:license "CC BY 4.0"^^xsd:string ;
+    omv:modificationDate "May 27, 2022"^^xsd:string ;
+    omv:name "Open Innovation Environment domain ontologies, models module"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "OYSTER"^^xsd:string ;
+    omv:resourceLocator "https://github.com/emmo-repo/OIE-Ontologies/"^^xsd:anyURI .
+
+oekg:oie_software a omv:Ontology ;
+    oekg:branch "main"^^xsd:string ;
+    oekg:branchCount 1 ;
+    oekg:closedIssues 0 ;
+    oekg:description "Open Innovation Environment (OIE) domain ontologies"^^xsd:string ;
+    oekg:forks 1 ;
+    oekg:language "None"^^xsd:string ;
+    oekg:lastUpdate "2022-07-15T11:20:06+00:00"^^xsd:dateTime ;
+    oekg:openIssues 0 ;
+    oekg:owner "emmo-repo"^^xsd:string ;
+    oekg:stars 0 ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Software"^^xsd:string ;
+    omv:license "CC BY 4.0"^^xsd:string ;
+    omv:modificationDate "May 27, 2022"^^xsd:string ;
+    omv:name "Open Innovation Environment domain ontologies, software products module"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "OYSTER"^^xsd:string ;
+    omv:resourceLocator "https://github.com/emmo-repo/OIE-Ontologies/"^^xsd:anyURI .
+
+oekg:om a omv:Ontology ;
+    oekg:branch "develop"^^xsd:string,
+        "gh-pages"^^xsd:string,
+        "master"^^xsd:string ;
+    oekg:branchCount 3 ;
+    oekg:closedIssues 11 ;
+    oekg:description "Ontology of units of Measure"^^xsd:string ;
+    oekg:forks 23 ;
+    oekg:language "None"^^xsd:string ;
+    oekg:lastUpdate "2024-11-03T10:15:06+00:00"^^xsd:dateTime ;
+    oekg:openIssues 19 ;
+    oekg:owner "HajoRijgersberg"^^xsd:string ;
+    oekg:stars 90 ;
+    omv:citations "210, https://scholar.google.de/scholar?cites=17292059678245839149&as_sdt=2005&sciodt=0,5&hl=de"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Units"^^xsd:string ;
+    omv:license "CC BY 4.0"^^xsd:string ;
+    omv:modificationDate "27-Nov-22"^^xsd:string ;
+    omv:name "Ontology of units of Measure"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "models concepts and relations important to scientific research"^^xsd:string ;
+    omv:reference "10.3233/SW-2012-0069"^^xsd:string ;
+    omv:resourceLocator "https://github.com/HajoRijgersberg/OM"^^xsd:anyURI ;
+    omv:usedInProject "Unknown"^^xsd:string .
+
+oekg:ontorule a omv:Ontology ;
+    omv:citations "4, https://scholar.google.de/scholar?cites=15191883162996681044&as_sdt=2005&sciodt=0,5&hl=en"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Steel Industry"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate "31-June-2010"^^xsd:string ;
+    omv:name "ONTORULE steel ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "Quality control system for galvanizing process of the coilcoils, defects, phenomena"^^xsd:string ;
+    omv:reference "Emilio Rubiera and Christian de Sainte Marie. 2011. ONTORULE: from business knowledge to ontology- and rules-based applications. In Proceedings of the 2011 Conference of the Center for Advanced Studies on Collaborative Research (CASCON '11). IBM Corp., USA, 327–329."^^xsd:string ;
+    omv:resourceLocator ""^^xsd:anyURI ;
+    omv:structuralDifferences "It's not modular"^^xsd:string ;
+    omv:usedInProject "ontorule project"^^xsd:string .
+
+oekg:opmw a omv:Ontology ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Process Modeling"^^xsd:string ;
+    omv:license "CC BY-NC-SA 2.0"^^xsd:string ;
+    omv:modificationDate "22-Dec-2014"^^xsd:string ;
+    omv:name "The Open Provenance Model for Workflows"^^xsd:string ;
+    omv:ontologyCategory "mid-level"^^xsd:string ;
+    omv:purpose "represent  workflow specifications in addition to their workflow execution traces"^^xsd:string ;
+    omv:resourceLocator "https://www.opmw.org/model/OPMW/"^^xsd:anyURI ;
+    omv:usedInProject "Unknown"^^xsd:string .
+
+oekg:osmo a omv:Ontology ;
+    omv:citations "8, https://scholar.google.de/scholar?cites=8897708042796366345&as_sdt=2005&sciodt=0,5&hl=en"^^xsd:string ;
+    omv:commonFactors "based on EMMO"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Materials modeling and simulation"^^xsd:string ;
+    omv:license "LGPL v3"^^xsd:string ;
+    omv:modificationDate "19-November-2020"^^xsd:string ;
+    omv:name "Ontology for Simulation, Modelling, and Optimization"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "workflow metadata standard"^^xsd:string ;
+    omv:reference "https://zenodo.org/record/5084394#.Y-DOjK3MJPY"^^xsd:string ;
+    omv:resourceLocator "https://zenodo.org/record/5084394#.Y-DOjK3MJPY"^^xsd:anyURI ;
+    omv:usedInProject "VIMMP Marketplace"^^xsd:string .
+
+oekg:p-plan a omv:Ontology ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Plan and Process"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate "21-Sep-20"^^xsd:string ;
+    omv:name "P-PLAN Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose ""^^xsd:string ;
+    omv:resourceLocator "http://vocab.linkeddata.es/p-plan/index.html"^^xsd:anyURI ;
+    omv:usedInProject "StahlDigital"^^xsd:string .
+
+oekg:pato a omv:Ontology ;
+    oekg:branch "Electrophys-Properties"^^xsd:string,
+        "contamination"^^xsd:string,
+        "contributor"^^xsd:string,
+        "create-pull-request/patch"^^xsd:string,
+        "gh-pages"^^xsd:string,
+        "issue-144b"^^xsd:string,
+        "issue-257"^^xsd:string,
+        "issue-317"^^xsd:string,
+        "issue-320"^^xsd:string,
+        "issue-357"^^xsd:string,
+        "issue-362"^^xsd:string,
+        "issue-397"^^xsd:string,
+        "issue_55"^^xsd:string,
+        "master"^^xsd:string,
+        "neuroglioform-to-neurogliaform"^^xsd:string,
+        "odk-130"^^xsd:string,
+        "pato-towards-and-pato-correlates_with"^^xsd:string,
+        "pop-pattern"^^xsd:string,
+        "property-violation"^^xsd:string,
+        "pyramidal-morphology-and-subclass"^^xsd:string,
+        "release-08-02"^^xsd:string,
+        "remove-quotation-marks-on-Martinotti-morphology-subclass"^^xsd:string,
+        "test-ext"^^xsd:string,
+        "update-imports"^^xsd:string ;
+    oekg:branchCount 24 ;
+    oekg:closedIssues 27 ;
+    oekg:description " PATO - the Phenotype And Trait Ontology"^^xsd:string ;
+    oekg:forks 18 ;
+    oekg:language "Makefile"^^xsd:string ;
+    oekg:lastUpdate "2024-09-04T17:50:28+00:00"^^xsd:dateTime ;
+    oekg:openIssues 3 ;
+    oekg:owner "pato-ontology"^^xsd:string ;
+    oekg:stars 58 ;
+    omv:citations "72, https://scholar.google.de/scholar?cites=13247546834773986577&as_sdt=2005&sciodt=0,5&hl=en"^^xsd:string ;
+    omv:commonFactors "BFO & OBO based"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Phenotypic, Physical Qualities"^^xsd:string ;
+    omv:license "CC-BY 3.0"^^xsd:string ;
+    omv:modificationDate "27-Jul-22"^^xsd:string ;
+    omv:name "Phenotype And Trait Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "An ontology of phenotypic qualities (properties, attributes or characteristics)."^^xsd:string ;
+    omv:reference "https://pubmed.ncbi.nlm.nih.gov/28387809/"^^xsd:string ;
+    omv:resourceLocator "https://github.com/pato-ontology/pato"^^xsd:anyURI ;
+    omv:usedInProject "OBO Foundry, Allotrope™"^^xsd:string .
+
+oekg:periodictable a omv:Ontology ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Representation of the Periodic Table of the Elements"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate "5-Feb-04"^^xsd:string ;
+    omv:name "Periodic Table Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose ""^^xsd:string ;
+    omv:resourceLocator "http://www.daml.org/2003/01/periodictable/ "^^xsd:anyURI ;
+    omv:usedInProject "Unknown"^^xsd:string .
+
+oekg:photovoltaics a omv:Ontology ;
+    oekg:branch "add_perodb_hn"^^xsd:string,
+        "demo_simon"^^xsd:string,
+        "development"^^xsd:string,
+        "main"^^xsd:string ;
+    oekg:branchCount 4 ;
+    oekg:closedIssues 5 ;
+    oekg:description "None"^^xsd:string ;
+    oekg:forks 0 ;
+    oekg:language "None"^^xsd:string ;
+    oekg:lastUpdate "2022-01-27T22:05:52+00:00"^^xsd:dateTime ;
+    oekg:openIssues 15 ;
+    oekg:owner "emmo-repo"^^xsd:string ;
+    oekg:stars 0 ;
+    omv:commonFactors "EMMO"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Perovskite Solar Cells"^^xsd:string ;
+    omv:license "CC BY 4.0"^^xsd:string ;
+    omv:modificationDate "Jul 13, 2022"^^xsd:string ;
+    omv:name "Photovoltaics Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose ""^^xsd:string ;
+    omv:resourceLocator "https://github.com/emmo-repo/domain-photovoltaics"^^xsd:anyURI .
+
+oekg:pldo a omv:Ontology ;
+    oekg:branch "main"^^xsd:string ;
+    oekg:branchCount 1 ;
+    oekg:closedIssues 0 ;
+    oekg:description "PLDO - Plane Defect Ontology"^^xsd:string ;
+    oekg:forks 0 ;
+    oekg:language "None"^^xsd:string ;
+    oekg:lastUpdate "2024-09-21T15:09:33+00:00"^^xsd:dateTime ;
+    oekg:openIssues 2 ;
+    oekg:owner "OCDO"^^xsd:string ;
+    oekg:stars 0 ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Materials Characterization"^^xsd:string ;
+    omv:license "CC BY 4.0"^^xsd:string ;
+    omv:modificationDate "May 5, 2024"^^xsd:string ;
+    omv:name "Planar Defects Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "description of planar defects in crystalline materials"^^xsd:string ;
+    omv:resourceLocator "https://github.com/OCDO/pldo"^^xsd:anyURI ;
+    omv:usedInProject "NFDI-MatWerk"^^xsd:string .
+
+oekg:plinius a omv:Ontology ;
+    omv:citations "52, https://scholar.google.ca/scholar?cites=12108088121376979075&as_sdt=2005&sciodt=0,5&hl=en"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Ceramic"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate ""^^xsd:string ;
+    omv:name "Plinius ontology"^^xsd:string ;
+    omv:ontologyCategory "application-level"^^xsd:string ;
+    omv:purpose "Knowledge extracting from document abstracts"^^xsd:string ;
+    omv:reference "Vet, Paul E. van der et al. “The Plinius ontology of ceramic materialsPaul.” (1994)."^^xsd:string ;
+    omv:resourceLocator ""^^xsd:anyURI ;
+    omv:structuralDifferences "It's not modular"^^xsd:string ;
+    omv:usedInProject "Unknown"^^xsd:string .
+
+oekg:pmdco a omv:Ontology ;
+    oekg:branch "develop-3.0.0"^^xsd:string,
+        "develop-hto-3.0"^^xsd:string,
+        "gh-pages"^^xsd:string,
+        "gh-pages-dev"^^xsd:string,
+        "issue91"^^xsd:string,
+        "main"^^xsd:string ;
+    oekg:branchCount 6 ;
+    oekg:closedIssues 20 ;
+    oekg:description "The PMD Core Ontology (PMDco) official release repository"^^xsd:string ;
+    oekg:forks 10 ;
+    oekg:language "None"^^xsd:string ;
+    oekg:lastUpdate "2024-10-16T12:21:43+00:00"^^xsd:dateTime ;
+    oekg:openIssues 10 ;
+    oekg:owner "materialdigital"^^xsd:string ;
+    oekg:stars 13 ;
+    omv:citations "2, https://scholar.google.de/scholar?cites=14776427507058570748&as_sdt=2005&sciodt=0,5&hl=en "^^xsd:string ;
+    omv:commonFactors "Describe a workflow from the point of industry and academic"^^xsd:string ;
+    omv:competencyQuestion "https://git.material-digital.de/ontologies/pmd-ontologies/-/tree/main/Partner%20project%20CQs"^^xsd:string ;
+    omv:domain "Materials Science"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate "20-Jan-23"^^xsd:string ;
+    omv:name "PMD Core Ontology"^^xsd:string ;
+    omv:ontologyCategory "mid-level"^^xsd:string ;
+    omv:overlaps "provo"^^xsd:string ;
+    omv:purpose "knowledge transfer between MSE experts and ontologists"^^xsd:string ;
+    omv:reference "http://ceur-ws.org/Vol-2941/paper11.pdf "^^xsd:string ;
+    omv:resourceLocator "https://github.com/materialdigital/core-ontology "^^xsd:anyURI ;
+    omv:specialProblem "process, experimental and computational workflow"^^xsd:string ;
+    omv:structuralDifferences "modular, having input/output object"^^xsd:string ;
+    omv:useCases "Tensile test, Heat treatment, boiling an egg"^^xsd:string ;
+    omv:usedInProject "Know-Now, KupferDigital, StahlDigital, DiProgMag, DigiBatMat, GlasDigital, SensoTwin, LeBeDigital"^^xsd:string .
+
+oekg:podo a omv:Ontology ;
+    oekg:branch "main"^^xsd:string ;
+    oekg:branchCount 1 ;
+    oekg:closedIssues 2 ;
+    oekg:description "PODO - Point Defect Ontology"^^xsd:string ;
+    oekg:forks 0 ;
+    oekg:language "None"^^xsd:string ;
+    oekg:lastUpdate "2024-05-04T20:04:36+00:00"^^xsd:dateTime ;
+    oekg:openIssues 2 ;
+    oekg:owner "OCDO"^^xsd:string ;
+    oekg:stars 0 ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Materials Characterization"^^xsd:string ;
+    omv:license "CC BY 4.0"^^xsd:string ;
+    omv:modificationDate "May 4, 2024"^^xsd:string ;
+    omv:name "Point Defects Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "description of point defects in crystalline materials"^^xsd:string ;
+    omv:resourceLocator "https://github.com/OCDO/podo"^^xsd:anyURI ;
+    omv:usedInProject "NFDI-MatWerk"^^xsd:string .
+
+oekg:premap a omv:Ontology ;
+    omv:citations "18, https://scholar.google.de/scholar?cites=18298476489450596761&as_sdt=2005&sciodt=0,5&hl=en"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Materials Science"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate ""^^xsd:string ;
+    omv:name "PREMAP ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "Knowledge guided process design"^^xsd:string ;
+    omv:reference "Bhat, Manoj, et al. \"Premλp: knowledge driven design of materials and engineering process.\" ICoRD'13: Global Product Development. Springer India, 2013."^^xsd:string ;
+    omv:resourceLocator ""^^xsd:anyURI ;
+    omv:structuralDifferences "modular"^^xsd:string ;
+    omv:usedInProject "Unknown"^^xsd:string .
+
+oekg:prima a omv:Ontology ;
+    oekg:branch "master"^^xsd:string ;
+    oekg:branchCount 1 ;
+    oekg:closedIssues 28 ;
+    oekg:description "This repository collects the ongoing work towards the development of the ontology on common terms defined for the MDMC Joint Lab and NEP."^^xsd:string ;
+    oekg:forks 5 ;
+    oekg:language "JavaScript"^^xsd:string ;
+    oekg:lastUpdate "2024-09-13T16:05:04+00:00"^^xsd:dateTime ;
+    oekg:openIssues 2 ;
+    oekg:owner "Materials-Data-Science-and-Informatics"^^xsd:string ;
+    oekg:stars 1 ;
+    omv:commonFactors "modular"^^xsd:string ;
+    omv:competencyQuestion "https://github.com/Materials-Data-Science-and-Informatics/MDMC-NEP-top-level-ontology/blob/master/CQs/v_2_0/CQs.md"^^xsd:string ;
+    omv:domain "Materials Science"^^xsd:string ;
+    omv:license "CC BY 3.0"^^xsd:string ;
+    omv:modificationDate "May 29, 2024"^^xsd:string ;
+    omv:name "PRovenance Information in MAterials science"^^xsd:string ;
+    omv:ontologyCategory "top-level"^^xsd:string ;
+    omv:purpose "captures the provenance information in the materials science domain"^^xsd:string ;
+    omv:resourceLocator "https://github.com/Materials-Data-Science-and-Informatics/MDMC-NEP-top-level-ontology"^^xsd:anyURI ;
+    omv:useCases "Materials science/nanoscience case study on Scanning Tunneling Microscopy (STM) images from Use Case 1 of the EOSC-Pillar project."^^xsd:string ;
+    omv:usedInProject "EOSC-Pillar project, Helmholtz Metadata Collaboration (HMC), NFFA-Europe Pilot"^^xsd:string .
+
+oekg:prov a omv:Ontology ;
+    omv:citations "519, https://scholar.google.de/scholar?cites=10865476685257256134&as_sdt=2005&sciodt=0,5&hl=de"^^xsd:string ;
+    omv:commonFactors "W3C recommended"^^xsd:string ;
+    omv:domain "Provenance Information"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate "30-Apr-13"^^xsd:string ;
+    omv:name "PROV Ontology"^^xsd:string ;
+    omv:ontologyCategory "Unknown"^^xsd:string ;
+    omv:purpose "represent and interchange provenance information"^^xsd:string ;
+    omv:reference "http://www.w3.org/TR/prov-o/"^^xsd:string ;
+    omv:resourceLocator "https://www.w3.org/TR/prov-o/ "^^xsd:anyURI ;
+    omv:usedInProject "39 datasets, KupferDigital, StahlDigital"^^xsd:string .
+
+oekg:qudt a omv:Ontology ;
+    oekg:branch "959/maven"^^xsd:string,
+        "main"^^xsd:string,
+        "rh-xsd-datatypes"^^xsd:string,
+        "srr-qk-broader"^^xsd:string ;
+    oekg:branchCount 4 ;
+    oekg:closedIssues 21 ;
+    oekg:description "QUDT -Quantities, Units, Dimensions and dataTypes - public repository"^^xsd:string ;
+    oekg:forks 73 ;
+    oekg:language "HTML"^^xsd:string ;
+    oekg:lastUpdate "2024-11-03T13:39:06+00:00"^^xsd:dateTime ;
+    oekg:openIssues 9 ;
+    oekg:owner "qudt"^^xsd:string ;
+    oekg:stars 117 ;
+    omv:citations "28, https://scholar.google.de/scholar?cites=741455167358608771&as_sdt=2005&sciodt=0,5&hl=en"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Units"^^xsd:string ;
+    omv:license "CC BY 4.0"^^xsd:string ;
+    omv:modificationDate "27-Jul-22"^^xsd:string ;
+    omv:name "Quantities, Units, Dimensions, and Types Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose """define the base classes properties, and restrictions used for modeling \r
+physical quantities, units of measure, and their dimensions in various \r
+measurement systems"""^^xsd:string ;
+    omv:reference "https://doi.org/10.25504/FAIRsharing.d3pqw7"^^xsd:string ;
+    omv:resourceLocator "https://github.com/qudt/qudt-public-repo"^^xsd:anyURI ;
+    omv:usedInProject "Open PHACTS, StahlDigital, DigiBatMat, KupferDigital"^^xsd:string .
+
+oekg:qudv a omv:Ontology ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Units"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate ""^^xsd:string ;
+    omv:name "Quantities, Units, Dimensions, Values"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose """conceptual model for Quantities, Units, Dimensions, Values (QUDV) to \r
+define systems of units and quantities for use in system models"""^^xsd:string ;
+    omv:resourceLocator "https://www.omgwiki.org/OMGSysML/lib/exe/fetch.php?media=sysml-qudv:qudv-owl:sysml-qudv.owl"^^xsd:anyURI ;
+    omv:usedInProject "Unknown"^^xsd:string .
+
+oekg:saref a omv:Ontology ;
+    omv:citations "252, https://scholar.google.de/scholar?cites=9235259563448016495&as_sdt=2005&sciodt=0,5&hl=de"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Energy"^^xsd:string ;
+    omv:license "https://forge.etsi.org/etsi-software-license"^^xsd:string ;
+    omv:modificationDate "02-July-2020"^^xsd:string ;
+    omv:name "Smart Applications REFerence"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "enable interoperability between solutions from different providers and among various activity sectors in the Internet of Things (IoT), thus contributing to the development of the global digital market"^^xsd:string ;
+    omv:reference "https://link.springer.com/chapter/10.1007/978-3-319-21545-7_9"^^xsd:string ;
+    omv:resourceLocator "https://labs.etsi.org/rep/saref/saref-core/-/tree/develop-v3.1.1"^^xsd:anyURI ;
+    omv:usedInProject "EEBus, SmartM2M"^^xsd:string .
+
+oekg:semmd a omv:Ontology ;
+    oekg:branch "master"^^xsd:string ;
+    oekg:branchCount 1 ;
+    oekg:closedIssues 1 ;
+    oekg:description "Semantic Materials, Manufacturing, and Design"^^xsd:string ;
+    oekg:forks 0 ;
+    oekg:language "None"^^xsd:string ;
+    oekg:lastUpdate "2022-04-12T13:47:04+00:00"^^xsd:dateTime ;
+    oekg:openIssues 0 ;
+    oekg:owner "cpauloh"^^xsd:string ;
+    oekg:stars 3 ;
+    omv:commonFactors "reuse BFO and QUDT"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Materials, Manufacturing"^^xsd:string ;
+    omv:license "CC BY-SA 4.0"^^xsd:string ;
+    omv:modificationDate "15-Nov-2017"^^xsd:string ;
+    omv:name "Semantic Materials, Manufacturing, and Design"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "have human-understandable definitions"^^xsd:string ;
+    omv:resourceLocator "https://github.com/cpauloh/semmd"^^xsd:anyURI ;
+    omv:usedInProject "Unknown"^^xsd:string .
+
+oekg:skos_mdo a omv:Ontology ;
+    omv:citations "10, https://scholar.google.de/scholar?cites=10554157718369981830&as_sdt=2005&sciodt=0,5&hl=de"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Materials Science"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate "1-Nov-17"^^xsd:string ;
+    omv:name "Simple Knowledge Organization System (SKOS) version of Materials Data Vocabulary "^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose ""^^xsd:string ;
+    omv:reference "http://doi.org/10.5334/dsj-2021-018"^^xsd:string ;
+    omv:resourceLocator "https://data.nist.gov/od/id/67C783D4BA814C8EE05324570681708A1899"^^xsd:anyURI ;
+    omv:usedInProject "Unknown"^^xsd:string .
+
+oekg:slacks a omv:Ontology ;
+    omv:citations "41, https://scholar.google.de/scholar?cites=18364089154280450098&as_sdt=2005&sciodt=0,5&hl=en"^^xsd:string ;
+    omv:commonFactors """reuse/based on NASA unit ontology, part of\r
+Ashino and MatOnto"""^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Composites"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate ""^^xsd:string ;
+    omv:name "SLACKS ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "Materials selection for laminated composites product"^^xsd:string ;
+    omv:reference "https://doi.org/10.1016/j.aei.2013.12.004"^^xsd:string ;
+    omv:resourceLocator ""^^xsd:anyURI ;
+    omv:structuralDifferences "It's not modular"^^xsd:string ;
+    omv:usedInProject "Unknown"^^xsd:string .
+
+oekg:sp a omv:Ontology ;
+    oekg:branch "master"^^xsd:string ;
+    oekg:branchCount 1 ;
+    oekg:closedIssues 0 ;
+    oekg:description "SMART-Protocols is an ontology to represent experimental protocols"^^xsd:string ;
+    oekg:forks 1 ;
+    oekg:language "HTML"^^xsd:string ;
+    oekg:lastUpdate "2021-02-03T18:17:29+00:00"^^xsd:dateTime ;
+    oekg:openIssues 0 ;
+    oekg:owner "SMARTProtocols"^^xsd:string ;
+    oekg:stars 4 ;
+    omv:citations "12, https://scholar.google.de/scholar?cites=15825585863801803212&as_sdt=2005&sciodt=0,5&hl=de"^^xsd:string ;
+    omv:competencyQuestion "https://smartprotocols.github.io/queries/"^^xsd:string ;
+    omv:domain "Experiments"^^xsd:string ;
+    omv:license "CC BY 4.0"^^xsd:string ;
+    omv:modificationDate "3-Dec-14"^^xsd:string ;
+    omv:name "SMART-Protocols"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "reporting an experimental protocol"^^xsd:string ;
+    omv:reference "10.1186/s13326-017-0160-y"^^xsd:string ;
+    omv:resourceLocator "https://github.com/SMARTProtocols/SMART-Protocols"^^xsd:anyURI ;
+    omv:structuralDifferences "two ontology modules expressed in OWL, based on BFO"^^xsd:string ;
+    omv:usedInProject "Unknown"^^xsd:string .
+
+oekg:ssn a omv:Ontology ;
+    omv:citations "1112, https://www.sciencedirect.com/science/article/pii/S1570826812000571#section-cited-by"^^xsd:string ;
+    omv:commonFactors "A collaborative project between W3C and OGC."^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Sensors"^^xsd:string ;
+    omv:license "http://www.opengeospatial.org/ogc/Software"^^xsd:string ;
+    omv:modificationDate "6-May-22"^^xsd:string ;
+    omv:name "Semantic Sensor Network Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:overlaps """while there were a number of existing artefacts (twelve ontologies were reviewed) none covered the requirements of the use cases, Compton, M., Henson, C. A., Lefort, L., Neuhaus, H., & Sheth, A. P. (2009). A Survey of the Semantic\r
+Specification of Sensors.\r
+CEUR Workshop Proceedings, 522, 17-32.\r
+https://corescholar.libraries.wright.edu/knoesis/664"""^^xsd:string ;
+    omv:purpose "describe sensors"^^xsd:string ;
+    omv:reference "https://doi.org/10.1016/j.websem.2012.05.003"^^xsd:string ;
+    omv:resourceLocator "https://w3c.github.io/sdw/ssn/"^^xsd:anyURI ;
+    omv:structuralDifferences "New modular version, the alignment to DOLCE-UltraLite (DUL) and the realisation of the core Stimulus–Sensor–Observation ontology design pattern"^^xsd:string ;
+    omv:useCases "data discovery and linking, device discovery and selection, provenance and diagnosis, and device operation, tasking and programming–with a prototypical example in each"^^xsd:string ;
+    omv:usedInProject "SENSEI, SmartProducts, SPITFIRE FP7, SemsorGrid4Env, Exalted, CSIRO, https://w3c.github.io/sdw/ssn-usage/"^^xsd:string .
+
+oekg:ssos a omv:Ontology ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Life Cycle Information"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate "31-Jan-2021"^^xsd:string ;
+    omv:name "Standards-Specific Ontology Standard"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "describes the life cycle of consensus-based standardization projects and published standardization deliverables"^^xsd:string ;
+    omv:resourceLocator "https://www.niso.org/standards-committees/ssos"^^xsd:anyURI ;
+    omv:usedInProject "Unknown"^^xsd:string .
+
+oekg:sumo a omv:Ontology ;
+    omv:citations "404, https://www.semanticscholar.org/paper/The-Suggested-Upper-Merged-Ontology%3A-A-Large-for-Pease-Niles/8f69ac7e6b646714a356868191632d37e1c0be07"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain ""^^xsd:string ;
+    omv:license "GNU Public License"^^xsd:string ;
+    omv:modificationDate ""^^xsd:string ;
+    omv:name "Suggested Upper Merged Ontology"^^xsd:string ;
+    omv:ontologyCategory "top-level"^^xsd:string ;
+    omv:purpose ""^^xsd:string ;
+    omv:reference "https://www.semanticscholar.org/paper/The-Suggested-Upper-Merged-Ontology%3A-A-Large-for-Pease-Niles/8f69ac7e6b646714a356868191632d37e1c0be07"^^xsd:string ;
+    omv:resourceLocator ""^^xsd:anyURI .
+
+oekg:tribain a omv:Ontology ;
+    oekg:branch "master"^^xsd:string ;
+    oekg:branchCount 1 ;
+    oekg:closedIssues 0 ;
+    oekg:description "tribAin - ontology for scientific experiments in the domain of tribology"^^xsd:string ;
+    oekg:forks 3 ;
+    oekg:language "None"^^xsd:string ;
+    oekg:lastUpdate "2024-09-24T14:00:38+00:00"^^xsd:dateTime ;
+    oekg:openIssues 0 ;
+    oekg:owner "snow0815"^^xsd:string ;
+    oekg:stars 4 ;
+    omv:citations "30, https://scholar.google.de/scholar?hl=en&as_sdt=0%2C5&q=tribAIn%E2%80%94Towards+an+Explicit+Specification+of+Shared+Tribological+Understanding&btnG="^^xsd:string ;
+    omv:commonFactors "Using the EXPO (ontology of scientific experiments)"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "tribology "^^xsd:string ;
+    omv:license "CC BY 4.0"^^xsd:string ;
+    omv:modificationDate "Sep 3, 2020"^^xsd:string ;
+    omv:name "tribAIn Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "formalize knowledge gained from tribological experiments for reuse, comparison and documentation"^^xsd:string ;
+    omv:reference "https://www.mdpi.com/2076-3417/10/13/4421"^^xsd:string ;
+    omv:resourceLocator "https://github.com/snow0815/tribAIn"^^xsd:anyURI .
+
+oekg:uo a omv:Ontology ;
+    oekg:branch "master"^^xsd:string,
+        "odk"^^xsd:string,
+        "uld"^^xsd:string,
+        "wiki"^^xsd:string ;
+    oekg:branchCount 4 ;
+    oekg:closedIssues 19 ;
+    oekg:description "An ontology of units of measurements"^^xsd:string ;
+    oekg:forks 12 ;
+    oekg:language "Makefile"^^xsd:string ;
+    oekg:lastUpdate "2024-07-06T19:41:34+00:00"^^xsd:dateTime ;
+    oekg:openIssues 11 ;
+    oekg:owner "bio-ontology-research-group"^^xsd:string ;
+    oekg:stars 19 ;
+    omv:citations "108, https://scholar.google.de/scholar?cites=3060120582147019509&as_sdt=2005&sciodt=0,5&hl=de"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Units"^^xsd:string ;
+    omv:license "CC-BY"^^xsd:string ;
+    omv:modificationDate "20-Jun-22"^^xsd:string ;
+    omv:name "Units of measurement ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose ""^^xsd:string ;
+    omv:reference "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3468815/"^^xsd:string ;
+    omv:resourceLocator "https://github.com/bio-ontology-research-group/unit-ontology"^^xsd:anyURI ;
+    omv:usedInProject "Unknown"^^xsd:string .
+
+oekg:vimmp a omv:Ontology ;
+    omv:citations "25, https://scholar.google.de/scholar?cites=4243665838757195274&as_sdt=2005&sciodt=0,5&hl=de"^^xsd:string ;
+    omv:commonFactors "based on EMMO"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Open Platform, Materials Modelling"^^xsd:string ;
+    omv:license "LGPL 3"^^xsd:string ;
+    omv:modificationDate "2-January-2021"^^xsd:string ;
+    omv:name "Virtual Materials Marketplace (VIMMP) Ontology"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "characterize services, models, and interactions between users"^^xsd:string ;
+    omv:reference "https://arxiv.org/abs/1912.01519"^^xsd:string ;
+    omv:resourceLocator "https://matportal.org/ontologies/VIMMP_ONTOLOGIES"^^xsd:anyURI ;
+    omv:usedInProject "VIMMP Marketplace"^^xsd:string .
+
+oekg:wild a omv:Ontology ;
+    omv:citations "20, https://scholar.google.de/scholar?cites=8483668570925496549&as_sdt=2005&sciodt=0,5&hl=en"^^xsd:string ;
+    omv:competencyQuestion "Unknown"^^xsd:string ;
+    omv:domain "Process Modeling"^^xsd:string ;
+    omv:license "Unknown"^^xsd:string ;
+    omv:modificationDate "4-Mar-22"^^xsd:string ;
+    omv:name "Ontology to describe Workflows in Linked Data"^^xsd:string ;
+    omv:ontologyCategory "domain-level"^^xsd:string ;
+    omv:purpose "describe workflow"^^xsd:string ;
+    omv:reference "https://arxiv.org/abs/1804.05044"^^xsd:string ;
+    omv:resourceLocator "https://databus.dbpedia.org/ontologies/purl.org/wild--vocab/2022.03.04-103146"^^xsd:anyURI ;
+    omv:usedInProject "DigiBatMat"^^xsd:string .
 
